@@ -1,11 +1,53 @@
 @charset "UTF-8";
-@-webkit-keyframes fadeInInfoBorder {
-  from {
-    border: 2px solid rgba(217, 237, 247, 0);
-  }
-  to {
-    border: 2px solid #d9edf7;
-  }
+/**
+ * http://applemusic.tumblr.com/
+ */
+/** Ultra Light */
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 100;
+  font-display: swap;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+
+/** Thin */
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 200;
+  font-display: swap;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+
+/** Regular */
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/** Medium */
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 500;
+  font-display: swap;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 600;
+  font-display: swap;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
 }
 
 @keyframes fadeInInfoBorder {
@@ -14,15 +56,6 @@
   }
   to {
     border: 2px solid #d9edf7;
-  }
-}
-
-@-webkit-keyframes fadeInSuccessBorder {
-  from {
-    border: 2px solid rgba(193, 219, 155, 0);
-  }
-  to {
-    border: 2px solid #c1db9b;
   }
 }
 
@@ -35,34 +68,12 @@
   }
 }
 
-@-webkit-keyframes fadeInErrorBorder {
-  from {
-    border: 2px solid rgba(220, 49, 68, 0);
-  }
-  to {
-    border: 2px solid #dc3144;
-  }
-}
-
 @keyframes fadeInErrorBorder {
   from {
     border: 2px solid rgba(220, 49, 68, 0);
   }
   to {
     border: 2px solid #dc3144;
-  }
-}
-
-@-webkit-keyframes scaleUpAndFadeIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scaleY(0.85);
-    -webkit-transform-origin: center top;
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: scaleY(1);
-    -webkit-transform-origin: center top;
   }
 }
 
@@ -79,17 +90,6 @@
   }
 }
 
-@-webkit-keyframes scaleUp {
-  from {
-    -webkit-transform: scaleY(0.85);
-    -webkit-transform-origin: center top;
-  }
-  to {
-    -webkit-transform: scaleY(1);
-    -webkit-transform-origin: center top;
-  }
-}
-
 @keyframes scaleUp {
   from {
     transform: scaleY(0.85);
@@ -98,24 +98,6 @@
   to {
     transform: scaleY(1);
     transform-origin: center top;
-  }
-}
-
-@-webkit-keyframes highlight {
-  0% {
-    background-color: #c6e59b;
-    padding-top: 7px;
-    padding-bottom: 7px;
-  }
-  75% {
-    background-color: #c6e59b;
-    padding-top: 7px;
-    padding-bottom: 7px;
-  }
-  100% {
-    background-color: transparent;
-    padding-top: 0;
-    padding-bottom: 0;
   }
 }
 
@@ -137,15 +119,6 @@
   }
 }
 
-@-webkit-keyframes bouncedelay {
-  0%, 80%, 100% {
-    -webkit-transform: scale(0);
-  }
-  40% {
-    -webkit-transform: scale(1);
-  }
-}
-
 @keyframes bouncedelay {
   0%, 80%, 100% {
     transform: scale(0);
@@ -155,7 +128,7 @@
   }
 }
 
-/* line 8, src/styles.scss */
+/* line 57, src/styles.scss */
 #fc {
   /*!
  * Bootstrap v3.4.1 (https://getbootstrap.com/)
@@ -4100,8 +4073,7 @@
 #fc input[type="search"] {
   box-sizing: border-box;
   -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
 }
 
 /* line 61, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
@@ -5091,8 +5063,6 @@ fieldset[disabled]
   line-height: 1.42857;
   border-radius: 4px;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -7969,15 +7939,6 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   color: #843534;
 }
 
-@-webkit-keyframes progress-bar-stripes {
-  from {
-    background-position: 40px 0;
-  }
-  to {
-    background-position: 0 0;
-  }
-}
-
 @keyframes progress-bar-stripes {
   from {
     background-position: 40px 0;
@@ -8021,7 +7982,6 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 /* line 64, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_progress-bars.scss */
 #fc .progress.active .progress-bar,
 #fc .progress-bar.active {
-  -webkit-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite;
 }
 
@@ -9243,8 +9203,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   background: transparent;
   border: 0;
   -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
 }
 
 /* line 11, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss */
@@ -10078,10 +10037,6 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   position: fixed;
 }
 
-@-ms-viewport {
-  width: device-width;
-}
-
 /* line 14, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
 #fc .visible-xs, #fc .fc-form-label--new-cc-cvv2 {
   display: none !important;
@@ -10399,7 +10354,6 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -10446,18 +10400,6 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 /* line 46, src/_fc-to-bootstrap.scss */
-#fc ._form-control::-moz-placeholder, #fc .fc-form-control::-moz-placeholder {
-  color: #6c757d;
-  opacity: 1;
-}
-#fc ._form-control:-ms-input-placeholder, #fc .fc-form-control:-ms-input-placeholder {
-  color: #6c757d;
-  opacity: 1;
-}
-#fc ._form-control::-ms-input-placeholder, #fc .fc-form-control::-ms-input-placeholder {
-  color: #6c757d;
-  opacity: 1;
-}
 #fc ._form-control::placeholder, #fc .fc-form-control::placeholder {
   color: #6c757d;
   opacity: 1;
@@ -10519,82 +10461,102 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 /* line 1, src/_defaults.scss */
-#fc html, #fc body {
+#fc html,
+#fc body {
   height: 100%;
 }
 
-/* line 4, src/_defaults.scss */
+/* line 5, src/_defaults.scss */
 #fc body {
-  background: #ffffff url(/static/themes/responsive/images/background-dark.png) repeat top left;
+  color: #76797e;
+  background: #ffffff;
   padding: 0;
 }
 
 @media (min-width: 768px) {
-  /* line 4, src/_defaults.scss */
+  /* line 5, src/_defaults.scss */
   #fc body {
-    padding: 30px 0;
+    padding: 0;
   }
 }
 
-/* line 12, src/_defaults.scss */
+/* line 14, src/_defaults.scss */
 #fc a {
   color: #7a7a7a;
 }
 
-/* line 13, src/_defaults.scss */
+/* line 17, src/_defaults.scss */
 #fc .text-info {
-  color: #3c3b38;
-}
-
-/* line 19, src/_defaults.scss */
-#fc h1 {
-  color: #76797e;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #3ba1df;
 }
 
 /* line 23, src/_defaults.scss */
+#fc h1,
 #fc h2,
+#fc h3,
+#fc h4,
+#fc h5 {
+  color: #212121;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 31, src/_defaults.scss */
 #fc h3,
 #fc h4 {
   font-weight: normal;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);
+  text-shadow: unset;
 }
 
-/* line 30, src/_defaults.scss */
-#fc h2 {
-  color: #76797e;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* line 34, src/_defaults.scss */
-#fc h3 {
-  color: #909397;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 22px;
+/* line 36, src/_defaults.scss */
+#fc h1 {
+  font-weight: 700;
 }
 
 /* line 39, src/_defaults.scss */
+#fc h2 {
+  font-weight: 600;
+}
+
+/* line 42, src/_defaults.scss */
+#fc h3 {
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+  /* line 42, src/_defaults.scss */
+  #fc h3 {
+    font-size: 1.75rem;
+  }
+}
+
+/* line 49, src/_defaults.scss */
 #fc h4 {
-  color: #aaacb0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: calc(1.275rem + 0.3vw);
 }
 
-/* line 44, src/_defaults.scss */
+@media (min-width: 1200px) {
+  /* line 49, src/_defaults.scss */
+  #fc h4 {
+    font-size: 1.5rem;
+  }
+}
+
+/* line 55, src/_defaults.scss */
 #fc h5 {
-  color: #909397;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
-/* line 51, src/_defaults.scss */
+/* line 59, src/_defaults.scss */
+#fc h6,
 #fc p {
-  font-size: 14px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--body);
 }
 
-/* line 56, src/_defaults.scss */
+/* line 66, src/_defaults.scss */
 #fc p,
 #fc input,
 #fc button,
@@ -10606,15 +10568,15 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 #fc address,
 #fc li,
 #fc ul {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* line 71, src/_defaults.scss */
+/* line 81, src/_defaults.scss */
 #fc fieldset {
   margin: 30px 0;
 }
 
-/* line 75, src/_defaults.scss */
+/* line 85, src/_defaults.scss */
 #fc legend, #fc #fc-receipt-container #fc-cart--responsive .fc-cart__title__header {
   color: #454649;
   font-weight: thin;
@@ -10623,19 +10585,19 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   font-size: 1.75em;
 }
 
-/* line 84, src/_defaults.scss */
+/* line 94, src/_defaults.scss */
 #fc input[type="number"]::-webkit-inner-spin-button,
 #fc input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* line 90, src/_defaults.scss */
-#fc input[type=number] {
+/* line 100, src/_defaults.scss */
+#fc input[type='number'] {
   -moz-appearance: textfield;
 }
 
-/* line 94, src/_defaults.scss */
+/* line 104, src/_defaults.scss */
 #fc li {
   margin: 0;
 }
@@ -11293,7 +11255,6 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 
 /* line 29, src/_discounts.scss */
 #fc .fc-transaction__discounts .fc-subtotal--row--new {
-  -webkit-animation: highlight 2s ease-in 0s 1;
   animation: highlight 2s ease-in 0s 1;
 }
 
@@ -11395,7 +11356,6 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   color: #495057;
   background-clip: padding-box;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   border-radius: 0;
 }
@@ -11512,7 +11472,6 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   padding-right: 0px;
   border-bottom: 1px solid #cccccc;
   box-shadow: 0px 0px 0px #ffffff;
-  -moz-padding: 8px 0 4px 12px;
   -webkit-box-shadow: none;
 }
 
@@ -11524,20 +11483,20 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   }
 }
 
-/* line 166, src/_form-fields.scss */
+/* line 164, src/_form-fields.scss */
 #fc select.fc-form-control:focus {
   border: 1px solid #badaf2;
   transition: border 0.2s ease-in-out;
   box-shadow: 0px 0px 2px 2px #badaf2;
 }
 
-/* line 174, src/_form-fields.scss */
+/* line 172, src/_form-fields.scss */
 #fc .fc-input-group-container {
   padding: 5px 28px 0px 28px;
   position: relative;
 }
 
-/* line 178, src/_form-fields.scss */
+/* line 176, src/_form-fields.scss */
 #fc .fc-input-group-container .fc-form-group {
   margin-top: -40px;
   max-height: 0;
@@ -11545,22 +11504,22 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   transition: all 0.2s ease-in 0.2s;
 }
 
-/* line 184, src/_form-fields.scss */
+/* line 182, src/_form-fields.scss */
 #fc .fc-input-group-container .fc-form-group select {
   background: #ffffff;
 }
 
-/* line 188, src/_form-fields.scss */
+/* line 186, src/_form-fields.scss */
 #fc .fc-input-group-container .fc-form-group input {
   background: #ffffff;
 }
 
-/* line 192, src/_form-fields.scss */
+/* line 190, src/_form-fields.scss */
 #fc .fc-input-group-container .fc-form-group label {
   padding-left: 0;
 }
 
-/* line 198, src/_form-fields.scss */
+/* line 196, src/_form-fields.scss */
 #fc .fc-input-group-container--active {
   padding-bottom: 10px;
   background-color: #f1f1f1;
@@ -11569,12 +11528,12 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   transition: background-color 0.2s linear 0.2s;
 }
 
-/* line 205, src/_form-fields.scss */
+/* line 203, src/_form-fields.scss */
 #fc .fc-input-group-container--active p {
   font-size: 95%;
 }
 
-/* line 209, src/_form-fields.scss */
+/* line 207, src/_form-fields.scss */
 #fc .fc-input-group-container--active .fc-form-group {
   opacity: 1;
   margin: 1em 0px 10px 0;
@@ -11582,7 +11541,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   transition: all 0.2s ease-in 0.2s;
 }
 
-/* line 216, src/_form-fields.scss */
+/* line 214, src/_form-fields.scss */
 #fc .fc-input-group-container--active .fc-input-group-container__title {
   background-color: #e1e1e1;
   transition: background-color 0.2s linear 0.2s;
@@ -11591,47 +11550,47 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   min-height: 40px;
 }
 
-/* line 223, src/_form-fields.scss */
+/* line 221, src/_form-fields.scss */
 #fc .fc-input-group-container--active .fc-input-group-container__title input {
   left: -2px;
   margin-top: -6px;
 }
 
-/* line 229, src/_form-fields.scss */
+/* line 227, src/_form-fields.scss */
 #fc .fc-input-group-container--active .fc-input-group-container__title--forced {
   background-color: #bae086;
   text-shadow: none;
   padding-left: 23px;
 }
 
-/* line 239, src/_form-fields.scss */
+/* line 237, src/_form-fields.scss */
 #fc .fc-input-group-container--checkbox .fc-form-control {
   top: 13px;
 }
 
-/* line 244, src/_form-fields.scss */
+/* line 242, src/_form-fields.scss */
 #fc .fc-input-group-container--radios .fc-radio {
   margin-bottom: 0.5em;
 }
 
-/* line 248, src/_form-fields.scss */
+/* line 246, src/_form-fields.scss */
 #fc .fc-input-group-container--checkbox .fc-input-group-container__title:before {
   border-radius: 7px;
 }
 
-/* line 252, src/_form-fields.scss */
+/* line 250, src/_form-fields.scss */
 #fc .fc-input-group-container--checkbox .fc-input-group-container__title input,
 #fc .fc-input-group-container--radio .fc-input-group-container__title input {
   margin-left: -28px;
   margin-top: -6px;
 }
 
-/* line 257, src/_form-fields.scss */
+/* line 255, src/_form-fields.scss */
 #fc .fc-input-group-container--checkbox .fc-input-group-container__title input {
   margin-top: -7px;
 }
 
-/* line 262, src/_form-fields.scss */
+/* line 260, src/_form-fields.scss */
 #fc .fc-input-group-container .fc-form-group input[type='checkbox'],
 #fc .fc-input-group-container .fc-form-group input[type='radio'] {
   float: left;
@@ -11648,7 +11607,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   box-shadow: none;
 }
 
-/* line 281, src/_form-fields.scss */
+/* line 279, src/_form-fields.scss */
 #fc .fc-form-group .fc-input-group-container__title {
   line-height: 25px;
   display: block !important;
@@ -11661,19 +11620,19 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   max-width: none;
 }
 
-/* line 293, src/_form-fields.scss */
+/* line 291, src/_form-fields.scss */
 #fc .fc-form-group .fc-input-group-container__title .fc-payment-no-logo {
   line-height: 2.9em;
 }
 
-/* line 297, src/_form-fields.scss */
+/* line 295, src/_form-fields.scss */
 #fc .fc-form-group .fc-input-group-container__title img {
   position: relative;
   top: -2px;
   display: inline-block;
 }
 
-/* line 306, src/_form-fields.scss */
+/* line 304, src/_form-fields.scss */
 #fc .fc-input-group-container__no-title .fc-form-control,
 #fc .fc-input-group-container__title .fc-form-control {
   position: relative;
@@ -11689,7 +11648,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   box-shadow: none;
 }
 
-/* line 320, src/_form-fields.scss */
+/* line 318, src/_form-fields.scss */
 #fc .fc-input-group-container__no-title:before,
 #fc .fc-input-group-container__title:before {
   content: '';
@@ -11705,7 +11664,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   clip: rect(0px, 100px, 100px, 6px);
 }
 
-/* line 334, src/_form-fields.scss */
+/* line 332, src/_form-fields.scss */
 #fc .fc-input-group-container__no-title.fc-input-group-container__title--forced:before,
 #fc .fc-input-group-container__title.fc-input-group-container__title--forced:before {
   background: inherit;
@@ -11713,17 +11672,17 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   height: 0;
 }
 
-/* line 343, src/_form-fields.scss */
+/* line 341, src/_form-fields.scss */
 #fc #fc-additional-fields .fc-form-group {
   margin-bottom: 8px;
 }
 
-/* line 352, src/_form-fields.scss */
+/* line 346, src/_form-fields.scss */
 #fc .fc-container__grid--use-different-address .fc-input-group-container--checkbox {
   padding-left: 0;
 }
 
-/* line 356, src/_form-fields.scss */
+/* line 350, src/_form-fields.scss */
 #fc .fc-form-label--tos a {
   color: #3c3b38;
   text-decoration: underline;
@@ -11980,22 +11939,18 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   background-color: #999;
   border-radius: 100%;
   display: inline-block;
-  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
   animation: bouncedelay 1.4s infinite ease-in-out;
   /* Prevent first frame from flickering when animation starts */
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
 /* line 21, src/_loading.scss */
 #fc .fc-spinner .bounce1 {
-  -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
 
 /* line 25, src/_loading.scss */
 #fc .fc-spinner .bounce2 {
-  -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
 
@@ -13108,7 +13063,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 
 @media print {
   @page {
-    /* line 8, src/styles.scss */
+    /* line 57, src/styles.scss */
     #fc {
       size: auto;
       margin-left: 2cm;
@@ -13698,7 +13653,6 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 @media (min-width: 768px) {
   /* line 125, src/_alerts.scss */
   #fc .fc-alert--success.fc-with-animation {
-    -webkit-animation: scaleUpAndFadeIn 0.2s ease-in 0s 1;
     animation: scaleUpAndFadeIn 0.2s ease-in 0s 1;
   }
 }
@@ -13763,7 +13717,6 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 @media (min-width: 768px) {
   /* line 167, src/_alerts.scss */
   #fc .fc-alert--danger {
-    -webkit-animation: scaleUp 0.2s ease-in 0s 1;
     animation: scaleUp 0.2s ease-in 0s 1;
   }
 }
@@ -13817,7 +13770,6 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 @media (min-width: 768px) {
   /* line 207, src/_alerts.scss */
   #fc .fc-alert--info {
-    -webkit-animation: scaleUpAndFadeIn 0.2s ease-in;
     animation: scaleUpAndFadeIn 0.2s ease-in;
   }
 }
@@ -13994,7 +13946,6 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   #fc .fc-alert-container--error .fc-input-group-container--active .fc-input-group-container__title:before,
   #fc .fc-alert-container--error .fc-input-group-container--active .fc-input-group-container__no-title:before,
   #fc .fc-alert-container--error .fc-input-group-container--checkbox .fc-input-group-container__title:before {
-    -webkit-animation: fadeInErrorBorder 0.2s linear 0s 1;
     animation: fadeInErrorBorder 0.2s linear 0s 1;
   }
 }
@@ -14032,7 +13983,6 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 @media (min-width: 768px) {
   /* line 377, src/_alerts.scss */
   #fc .fc-alert-container--error .fc-input-group--full-page {
-    -webkit-animation: fadeInErrorBorder 0.2s linear 0s 1;
     animation: fadeInErrorBorder 0.2s linear 0s 1;
   }
 }
@@ -14046,7 +13996,6 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 @media (min-width: 768px) {
   /* line 389, src/_alerts.scss */
   #fc .fc-alert-container--info .fc-form-control {
-    -webkit-animation: fadeInInfoBorder 0.1s linear;
     animation: fadeInInfoBorder 0.1s linear;
   }
 }
@@ -14079,7 +14028,6 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 @media (min-width: 768px) {
   /* line 403, src/_alerts.scss */
   #fc .fc-alert-container--info .fc-alert {
-    -webkit-animation: fadeInInfoBorder 0.1s linear;
     animation: fadeInInfoBorder 0.1s linear;
   }
 }
