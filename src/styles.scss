@@ -1,0 +1,40 @@
+@import 'bourbon';
+@import 'variables';
+
+@import 'custom-colors';
+
+@import 'animations';
+
+#fc {
+	@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+	@import 'fc-to-bootstrap';
+
+	@import 'defaults';
+	@import 'base-layout';
+	@import 'address-lookup';
+	@import 'buttons';
+	@import 'discounts';
+	@import 'error-notifier';
+	@import 'form-fields';
+	@import 'foxycomplete';
+	@import 'icons';
+	@import 'loading';
+	@import 'multiship';
+	@import 'payment-methods';
+	@import 'placeholder-polyfill';
+	@import 'products';
+	@import 'receipt';
+	@import 'shipping';
+	@import 'address-verification';
+	@import 'additional-components';
+	@import 'amazon';
+	@import 'paypalplus';
+	@import 'apple';
+	@import 'stripe';
+
+	// Alert styling goes last to properly override
+	@import 'alerts';
+}
+
+@import 'sidecart';

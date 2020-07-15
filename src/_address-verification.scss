@@ -1,0 +1,117 @@
+// Remodal.js-specific styling
+.fc-modal--overlay {
+  background: rgba(43, 46, 56, 0.9);
+}
+.fc-modal,
+.fc-modal--wrapper:after {
+  vertical-align: middle;
+}
+
+.fc-modal {
+  width:90%;
+}
+
+@media only screen and (min-width: 471px) {
+  .fc-modal {
+    width: 470px;
+  }
+}
+
+.fc-modal {
+  text-align:left;
+  background:none;
+}
+
+.lt-ie9 .fc-modal {
+  width: 470px;
+}
+
+
+// Address verification display styles
+.fc-modal {
+  display:none;
+
+  .fc-modal--inner {
+    position:relative;
+    padding:20px;
+    opacity:1;
+    display:block;
+    background:$white;
+    border-radius:4px;
+    border-width:0;
+    overflow:hidden;
+
+    animation:none;
+    -webkit-animation:none;
+
+    .fc-spinner {
+      margin:10px auto;
+      float:none;
+      > div {
+        background-color:$success;
+      }
+    }
+
+    h2, address, p {
+      text-shadow:none;
+    }
+    h2 {
+      font-size: em(21);
+      margin: 0 0 10px;
+      padding: 0;
+      color:$black;
+    }
+    p {
+      color:$black;
+      font-size:95%;
+      margin-bottom: 15px;
+
+      &:last-child {
+          margin-bottom: 0px;
+      }
+    }
+    address {
+      font-weight:normal;
+      color:$grayDark;
+      padding:10px;
+      border-radius:4px;
+      border:1px solid $grayMidLighter;
+      margin-bottom:0; // override default
+    }
+    .fc-address-validation--suggested address {
+      border:none;
+      background-color:$grayMidLighter;
+    }
+    a[data-remodal-action] {
+      cursor:pointer;
+    }
+
+    button {
+      @extend .btn-sm;
+      margin-top:10px;
+      width:100%;
+    }
+  }
+
+  .fc-alert--success {
+    h2 { color: $successText; }
+  }
+}
+
+.fc-modal--is-initialized {
+  display: inline-block;
+}
+
+.fc-address-validation--changed {
+  background-color:$highlight;
+  font-weight:bold;
+  color:$successText;
+}
+.fc-address-validation__address1:after,
+.fc-address-validation__address2:after,
+.fc-address-validation__region:after,
+.fc-address-validation__postal-code:after,
+.fc-address-validation__country:after {
+    content:"\000A";
+    white-space: pre;
+}
