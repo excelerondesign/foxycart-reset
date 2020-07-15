@@ -4,7 +4,8 @@ To include in a FoxyCart Store
 
 -   1 Under Templates
 -   1 Check "Add custom header and footer code to your templates".
--   2 Add a `link` element with an href to the stylesheet. - You will need to use `cdn.jsdelivr.net` to get the current version of the file you need.
+-   2 Add a `link` element with an href to the stylesheet.
+    -   You will need to use `cdn.jsdelivr.net` to get the current version of the file you need.
     -   _Explanation [here](https://stackoverflow.com/a/18049842)_
 -   3 Save the settings.
 -   4 Refresh the FoxyCart checkout page.
