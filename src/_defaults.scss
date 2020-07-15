@@ -3,6 +3,7 @@ body {
 	height: 100%;
 }
 body {
+	color: $primary;
 	background: $bodyBackground;
 	padding: 0;
 	@media ($medScreen) {
@@ -14,46 +15,52 @@ a {
 	color: $linkColor;
 }
 .text-info {
-	color: $secondary;
+	color: $infoText;
 }
 
 // Typography Overrides
 // =====================================================
-
-h1 {
-	color: $primary;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+h1,
 h2,
+h3,
+h4,
+h5 {
+	color: $grayDark;
+	font-family: $baseFontFamily;
+}
 h3,
 h4 {
 	font-weight: normal;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);
+	text-shadow: unset;
+}
+h1 {
+	font-weight: 700;
 }
 h2 {
-	color: $primary;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 600;
 }
 h3 {
-	color: lighten($darkerPrimary, 30%);
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 22px;
+	font-size: calc(1.325rem + 0.9vw);
+	font-weight: 500;
+	@media ($xLargeScreen) {
+		font-size: 1.75rem;
+	}
 }
 h4 {
-	color: lighten($darkerPrimary, 40%);
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 18px;
+	font-size: calc(1.275rem + 0.3vw);
+	@media ($xLargeScreen) {
+		font-size: 1.5rem;
+	}
 }
 h5 {
-	color: lighten($darkerPrimary, 30%);
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 13px;
-	font-weight: bold;
+	font-size: 1.5rem;
+	font-weight: 500;
 }
-
+h6,
 p {
-	font-size: 14px;
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--body);
 }
 
 p,
