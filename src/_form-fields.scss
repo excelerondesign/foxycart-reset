@@ -153,8 +153,6 @@ select.fc-form-control {
 	padding-right: 0px;
 	border-bottom: 1px solid lighten($grayMidLight, 20%);
 	box-shadow: 0px 0px 0px $white;
-	// browser specific hackety hackety
-	-moz-padding: 8px 0 4px 12px;
 	-webkit-box-shadow: none;
 
 	@media ($largeScreen) {
@@ -342,10 +340,6 @@ select.fc-form-control:focus {
 #fc-additional-fields {
 	.fc-form-group {
 		margin-bottom: 8px;
-	}
-
-	.fc-form-label {
-		//line-height: 2.9em;
 	}
 }
 
