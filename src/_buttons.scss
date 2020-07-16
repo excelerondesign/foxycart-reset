@@ -99,7 +99,7 @@
 	@include background(
 		linear-gradient(to bottom, #73b263 0%, #458c33 100%)
 	); /* W3C */
-	text-shadow: 1px 1px 0px rgba(50, 113, 35, 1);
+	text-shadow: unset;
 
 	&:hover,
 	&:focus {
@@ -109,7 +109,7 @@
 		@include background(
 			linear-gradient(to bottom, #458c33 0%, #458c33 100%)
 		); /* W3C */
-		text-shadow: 1px 1px 0px rgba(50, 113, 35, 1);
+		text-shadow: unset;
 		@include transition(all 0.1s linear);
 	}
 }
