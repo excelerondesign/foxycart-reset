@@ -97,3 +97,10 @@ $output-bourbon-deprecation-warnings: false !default;
 }
 
 // @import 'sidecart';
+@media print {
+	@page {
+		size: auto;
+		margin-left: 2cm;
+		margin-right: 2cm;
+	}
+}
