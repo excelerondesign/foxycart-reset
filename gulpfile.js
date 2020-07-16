@@ -9,7 +9,7 @@ var settings = {
 	polyfills: true,
 	styles: true,
 	svgs: true,
-	copy: true,
+	copy: false,
 	reload: true,
 };
 
@@ -191,20 +191,16 @@ var buildStyles = function (done) {
 			sass({
 				outputStyle: 'expanded',
 				includePaths: bourbon.includePaths,
-			}).on('error', sass.logError)
+			})
 		)
+		.pipe(dest(paths.styles.output))
+		.pipe(rename({ suffix: '.min' }))
 		.pipe(
 			postcss([
 				prefix({
 					cascade: true,
 					remove: true,
 				}),
-			])
-		)
-		.pipe(dest(paths.styles.output))
-		.pipe(rename({ suffix: '.min' }))
-		.pipe(
-			postcss([
 				minify({
 					discardComments: {
 						removeAll: true,
