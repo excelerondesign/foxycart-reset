@@ -195,7 +195,7 @@ select.fc-form-control:focus {
 .fc-input-group-container--active {
 	padding-bottom: 10px;
 	background-color: #f1f1f1;
-	border-radius: 5px;
+	border-radius: 0;
 	border: 2px solid $white;
 	@include transition(background-color 0.2s linear 0.2s);
 
@@ -243,7 +243,7 @@ select.fc-form-control:focus {
 }
 
 .fc-input-group-container--checkbox .fc-input-group-container__title:before {
-	border-radius: 7px;
+	border-radius: 0;
 }
 
 .fc-input-group-container--checkbox .fc-input-group-container__title input,
@@ -317,7 +317,7 @@ select.fc-form-control:focus {
 	&:before {
 		content: '';
 		background: #fff;
-		border-radius: 16px;
+		border-radius: 0;
 		border: 2px solid #fff;
 		width: 28px;
 		height: 28px;
