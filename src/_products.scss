@@ -38,17 +38,13 @@
 
 .fc-cart__item {
 	padding: 10px;
-	// border-top:2px solid $white;
+	border-top: unset;
 	font-size: 13px;
 	position: relative;
-
-	// &:nth-child(even) {
-	//   background: lighten($grayLight, 2%);
-	// }
 }
 
 .fc-cart__item--last {
-	// border-bottom:1px solid $grayLight;
+	border-bottom: unset;
 }
 
 .fc-cart__item__options {
@@ -296,14 +292,10 @@ $types: image details total price quantity;
 	}
 
 	@media ($medScreen) {
-		.fc-cart__item__total {
-			/*       text-align:right; */
-		}
-		.fc-cart__item__quantity {
-			/*       text-align:center; */
-		}
+		.fc-cart__item__total,
+		.fc-cart__item__quantity,
 		.fc-cart__item__price {
-			/*       text-align:left; */
+			text-align: unset;
 		}
 	}
 }
