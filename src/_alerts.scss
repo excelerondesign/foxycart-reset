@@ -364,6 +364,13 @@
 			@include animation(fadeInErrorBorder 0.2s linear 0s 1);
 		}
 	}
+	.fc-input-group-container--active
+		.fc-input-group-container--checkbox:before {
+		background-color: $infoText;
+	}
+	.fc-input-group-container [type='checkbox'][name='create-account'] {
+		display: none;
+	}
 	.fc-alert--danger {
 		display: block;
 		border-radius: unset;
