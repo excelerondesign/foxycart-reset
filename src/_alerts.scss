@@ -312,7 +312,7 @@
 	.fc-input-group-container--active {
 		background: lighten($notice, 40%);
 		border: 2px solid $notice;
-		border-radius: 5px;
+		border-radius: 0px;
 		transition: unset;
 
 		&:focus {
