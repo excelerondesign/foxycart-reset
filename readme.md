@@ -1,5 +1,7 @@
 # FoxyCart Reset
 
+![.github/workflows/pack.yaml](https://github.com/excelerondesign/foxycart-reset/workflows/.github/workflows/pack.yaml/badge.svg?branch=master)
+
 To include in a FoxyCart Store
 
 -   1 Under Templates
