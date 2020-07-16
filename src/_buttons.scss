@@ -79,10 +79,11 @@
 	transition: unset;
 	text-shadow: unset;
 	border-radius: unset;
+	padding: 0.375rem 0.75rem;
 }
 .fc-input-group__button > .fc-button:hover,
 .fc-button:hover {
-	@include background(linear-gradient($grayLightest, $grayLight) top 0%);
+	// @include background(linear-gradient($grayLightest, $grayLight) top 0%);
 	background: $btnActiveBackground; /* Old browsers */
 	color: $btnActiveText;
 	border-color: $btnActiveBorder;
@@ -92,14 +93,17 @@
 .fc-action--checkout--button,
 .fc-button--subscription-cancel,
 .fc-button--submit {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 0.375rem;
+	padding-bottom: 0.375rem;
 	border-color: $callToAction;
 	background-color: $navActive;
 	color: $white;
+	/*
 	@include background(
 		linear-gradient(to bottom, #73b263 0%, #458c33 100%)
-	); /* W3C */
+	);
+	*/
+	/* W3C */
 	text-shadow: unset;
 
 	&:hover,
@@ -107,9 +111,12 @@
 		color: $white;
 		border-color: $callToAction;
 		background-color: $navActive;
+		/*
 		@include background(
 			linear-gradient(to bottom, #458c33 0%, #458c33 100%)
-		); /* W3C */
+		);
+		*/
+		/* W3C */
 		text-shadow: unset;
 		transition: unset;
 	}

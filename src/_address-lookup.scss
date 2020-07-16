@@ -45,10 +45,12 @@
 		}
 
 		button {
-			@include border-left-radius(0);
+			// @include border-left-radius(0);
+			border-radius: 0;
 			padding-bottom: 4px;
 			margin-left: 1px;
-			line-height: 2;
+			line-height: 1.5;
+			text-shadow: unset;
 		}
 	}
 
