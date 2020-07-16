@@ -137,47 +137,6 @@
  */
   /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
   /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
-  /*
-@media (prefers-reduced-motion: reduce) {
-	._form-control {
-		transition: none;
-	}
-}
-
-._form-control:focus {
-	color: #495057;
-	background-color: #fff;
-	border-color: #8bbafe;
-	outline: 0;
-	box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
-}
-
-._form-control::-webkit-input-placeholder {
-	color: #6c757d;
-	opacity: 1;
-}
-
-._form-control::-moz-placeholder {
-	color: #6c757d;
-	opacity: 1;
-}
-
-._form-control::-ms-input-placeholder {
-	color: #6c757d;
-	opacity: 1;
-}
-
-._form-control::placeholder {
-	color: #6c757d;
-	opacity: 1;
-}
-
-._form-control:disabled,
-._form-control[readonly] {
-	background-color: #e9ecef;
-	opacity: 1;
-}
-*/
   /* Postal Code specific elements */
   /* First and Last name inputs on the same line */
   /* Company + Phone inputs optionally on the same line */
@@ -4073,7 +4032,8 @@
 #fc input[type="search"] {
   box-sizing: border-box;
   -webkit-appearance: none;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 
 /* line 61, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
@@ -9203,7 +9163,8 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   background: transparent;
   border: 0;
   -webkit-appearance: none;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 
 /* line 11, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss */
@@ -10354,6 +10315,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -10406,25 +10368,25 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 @media (max-width: 767px) {
-  /* line 95, src/_fc-to-bootstrap.scss */
+  /* line 54, src/_fc-to-bootstrap.scss */
   #fc .fc-container {
     padding-right: 7px;
     padding-left: 7px;
   }
-  /* line 100, src/_fc-to-bootstrap.scss */
+  /* line 59, src/_fc-to-bootstrap.scss */
   #fc .fc-container__row {
     margin-left: -7px;
     margin-right: -7px;
   }
 }
 
-/* line 106, src/_fc-to-bootstrap.scss */
+/* line 65, src/_fc-to-bootstrap.scss */
 #fc .panel, #fc .fc-cart__main,
 #fc .fc-checkout__main, #fc .fc-receipt__main {
   box-shadow: none;
 }
 
-/* line 115, src/_fc-to-bootstrap.scss */
+/* line 74, src/_fc-to-bootstrap.scss */
 #fc .fc-container__row,
 #fc .fc-checkout__main {
   margin-left: -15px;
@@ -10432,7 +10394,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 @media (min-width: 768px) and (max-width: 991px), (max-width: 480px) {
-  /* line 271, src/_fc-to-bootstrap.scss */
+  /* line 230, src/_fc-to-bootstrap.scss */
   #fc .fc-password-action--guest {
     float: left !important;
     clear: left;
@@ -10440,14 +10402,14 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 @media (min-width: 768px) and (max-width: 991px), (max-width: 480px) {
-  /* line 279, src/_fc-to-bootstrap.scss */
+  /* line 238, src/_fc-to-bootstrap.scss */
   #fc .fc-password-action--guest .fc-password-action--button-container {
     float: left !important;
     clear: left;
   }
 }
 
-/* line 291, src/_fc-to-bootstrap.scss */
+/* line 250, src/_fc-to-bootstrap.scss */
 #fc .fc-form-label--postal-code,
 #fc .fc-form-label--city-options,
 #fc .fc-form-label--city,
@@ -10643,13 +10605,13 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 @media (min-width: 1200px) {
-  /* line 35, src/_base-layout.scss */
+  /* line 36, src/_base-layout.scss */
   #fc .fc-container {
     max-width: 970px;
   }
 }
 
-/* line 40, src/_base-layout.scss */
+/* line 41, src/_base-layout.scss */
 #fc .fc-sidebar {
   background: whitesmoke;
   border-radius: 0 4px 4px 0;
@@ -10667,7 +10629,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 @media (min-width: 768px) {
-  /* line 40, src/_base-layout.scss */
+  /* line 41, src/_base-layout.scss */
   #fc .fc-sidebar {
     min-height: 100%;
     padding-bottom: 9999px;
@@ -10675,18 +10637,18 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   }
 }
 
-/* line 53, src/_base-layout.scss */
+/* line 55, src/_base-layout.scss */
 #fc .fc-sidebar .fc-container {
   padding: 0;
 }
 
-/* line 58, src/_base-layout.scss */
+/* line 60, src/_base-layout.scss */
 #fc .fc-checkout__main__contents {
   padding-top: 20px;
   transform: translate3d(0, 0, 0);
 }
 
-/* line 69, src/_base-layout.scss */
+/* line 70, src/_base-layout.scss */
 #fc #fc-cart--fixed-width .fc-logo__image,
 #fc #fc-cart--fixed-width .fc-cart__items__header,
 #fc #fc-cart--fixed-width .fc-logo,
@@ -10772,21 +10734,21 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 
 /* line 133, src/_base-layout.scss */
 #fc .fc-sidebar--cart .fc-shipping-rates__rate__name {
-  font-size: .9em;
+  font-size: 0.9em;
   padding-top: 3px;
 }
 
-/* line 148, src/_base-layout.scss */
+/* line 146, src/_base-layout.scss */
 #fc .fc-context--cart-fullpage .fc-sidecart-only-fixed {
   display: none;
 }
 
 @media (max-width: 767px) {
-  /* line 153, src/_base-layout.scss */
+  /* line 151, src/_base-layout.scss */
   #fc .fc-context--cart-fullpage .fc-section-counter {
     display: none !important;
   }
-  /* line 157, src/_base-layout.scss */
+  /* line 155, src/_base-layout.scss */
   #fc .fc-context--cart-fullpage .fc-cart__items--with-images .fc-cart__item__image {
     padding-left: 1px;
     padding-right: 1px;
@@ -10794,52 +10756,52 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 @media (min-width: 768px) {
-  /* line 164, src/_base-layout.scss */
+  /* line 162, src/_base-layout.scss */
   #fc .fc-context--cart-fullpage .fc-cart__title__header,
   #fc .fc-context--cart-fullpage .fc-order-quantity {
     display: inline-block;
     margin-bottom: 10px;
   }
-  /* line 169, src/_base-layout.scss */
+  /* line 167, src/_base-layout.scss */
   #fc .fc-context--cart-fullpage .fc-cart__title__header {
     padding-right: 20px;
   }
 }
 
-/* line 175, src/_base-layout.scss */
+/* line 173, src/_base-layout.scss */
 #fc .fc-cart__main {
   border-width: 2px;
 }
 
-/* line 179, src/_base-layout.scss */
+/* line 177, src/_base-layout.scss */
 #fc .fc-transaction {
   color: #76797e;
   font-size: 13px;
 }
 
-/* line 183, src/_base-layout.scss */
+/* line 181, src/_base-layout.scss */
 #fc .fc-transaction table {
   width: 100%;
 }
 
-/* line 188, src/_base-layout.scss */
+/* line 186, src/_base-layout.scss */
 #fc .fc-transaction__section {
   padding: 5px 0;
-  margin-bottom: .4em;
+  margin-bottom: 0.4em;
 }
 
-/* line 193, src/_base-layout.scss */
+/* line 191, src/_base-layout.scss */
 #fc .fc-transaction__ui__header {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 198, src/_base-layout.scss */
+/* line 196, src/_base-layout.scss */
 #fc .fc-transaction__ui__header__value {
   margin-left: 15px;
 }
 
-/* line 202, src/_base-layout.scss */
+/* line 200, src/_base-layout.scss */
 #fc .fc-transaction__ui__toggle {
   font-size: 11px;
   margin: 5px 0;
@@ -10847,13 +10809,13 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   float: right;
 }
 
-/* line 209, src/_base-layout.scss */
+/* line 207, src/_base-layout.scss */
 #fc .fc-subtotal--row {
   margin-bottom: 0;
   padding: 0;
 }
 
-/* line 214, src/_base-layout.scss */
+/* line 212, src/_base-layout.scss */
 #fc .fc-subtotal__label {
   text-align: left;
   color: #76797e;
@@ -10861,20 +10823,20 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   padding-left: 5px;
 }
 
-/* line 224, src/_base-layout.scss */
+/* line 222, src/_base-layout.scss */
 #fc .fc-transaction__subtotal .fc-subtotal__label,
 #fc .fc-transaction__total .fc-subtotal__label {
   padding-left: 0;
 }
 
-/* line 229, src/_base-layout.scss */
+/* line 227, src/_base-layout.scss */
 #fc .fc-subtotal__value {
   text-align: right;
   color: #76797e;
   vertical-align: bottom;
 }
 
-/* line 240, src/_base-layout.scss */
+/* line 237, src/_base-layout.scss */
 #fc .fc-logotype {
   text-align: center;
   font-size: 28px;
@@ -10882,7 +10844,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   margin-top: 2em;
 }
 
-/* line 247, src/_base-layout.scss */
+/* line 244, src/_base-layout.scss */
 #fc .fc-section-counter {
   height: 36px;
   width: 36px;
@@ -10899,23 +10861,28 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   box-shadow: inset 0 3px 5px -3px black;
 }
 
-/* line 267, src/_base-layout.scss */
+/* line 264, src/_base-layout.scss */
 #fc .fc-section-counter {
   display: inline-block !important;
 }
 
-/* line 274, src/_base-layout.scss */
+/* line 270, src/_base-layout.scss */
+#fc legend, #fc #fc-receipt-container #fc-cart--responsive .fc-cart__title__header {
+  background-color: var(--legend-background, #ffffff);
+}
+
+/* line 272, src/_base-layout.scss */
 #fc legend .fc-section-counter:before, #fc #fc-receipt-container #fc-cart--responsive .fc-cart__title__header .fc-section-counter:before {
   counter-increment: fieldsets 1;
   content: counter(fieldsets, decimal);
 }
 
-/* line 278, src/_base-layout.scss */
+/* line 276, src/_base-layout.scss */
 #fc legend .fc-active, #fc #fc-receipt-container #fc-cart--responsive .fc-cart__title__header .fc-active {
   background-color: #a3d55e;
 }
 
-/* line 281, src/_base-layout.scss */
+/* line 279, src/_base-layout.scss */
 #fc legend .incomplete, #fc #fc-receipt-container #fc-cart--responsive .fc-cart__title__header .incomplete {
   background-color: #64696f;
 }
@@ -11356,6 +11323,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   color: #495057;
   background-clip: padding-box;
   -webkit-appearance: none;
+     -moz-appearance: none;
           appearance: none;
   border-radius: 0;
 }
@@ -11363,10 +11331,11 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 /* line 54, src/_form-fields.scss */
 #fc .fc-form-control:focus {
   box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  border: 1px solid #8bbafe;
 }
 
 @media (max-width: 767px) {
-  /* line 59, src/_form-fields.scss */
+  /* line 60, src/_form-fields.scss */
   #fc .fc-form-control--postal-code,
   #fc .fc-form-control--postal-code:focus,
   #fc .fc-coupon-entry--input .fc-form-control,
@@ -11377,45 +11346,45 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   }
 }
 
-/* line 70, src/_form-fields.scss */
+/* line 71, src/_form-fields.scss */
 #fc .fc-sidebar .fc-form-control,
 #fc .fc-sidebar .fc-form-control:focus {
   background: #ffffff;
 }
 
-/* line 76, src/_form-fields.scss */
+/* line 77, src/_form-fields.scss */
 #fc .fc-cart__item__quantity .fc-form-control:focus {
   height: auto;
 }
 
-/* line 80, src/_form-fields.scss */
+/* line 81, src/_form-fields.scss */
 #fc .fc-form-control--static {
   line-height: 28px;
   /* to match the .fc-form-control elements */
 }
 
-/* line 84, src/_form-fields.scss */
+/* line 85, src/_form-fields.scss */
 #fc .fc-form-group .fc-form-group .fc-form-label {
   line-height: 28px;
 }
 
-/* line 88, src/_form-fields.scss */
+/* line 89, src/_form-fields.scss */
 #fc .fc-form-group--postal-code {
   /* To avoid double bottom margins when a .form-group containers more .form-group elements */
   margin-bottom: 0;
 }
 
-/* line 93, src/_form-fields.scss */
+/* line 94, src/_form-fields.scss */
 #fc .fc-alert--success .fc-input-group--customer-password__authenticated {
   width: 100%;
 }
 
-/* line 96, src/_form-fields.scss */
+/* line 97, src/_form-fields.scss */
 #fc .fc-alert--success .fc-input-group--customer-password__authenticated .fc-input-group__button {
   display: none;
 }
 
-/* line 101, src/_form-fields.scss */
+/* line 102, src/_form-fields.scss */
 #fc .fc-form-label {
   font-weight: normal;
   color: #76797e;
@@ -11423,7 +11392,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 @media (max-width: 767px) {
-  /* line 107, src/_form-fields.scss */
+  /* line 108, src/_form-fields.scss */
   #fc .fc-form-label.focused {
     width: auto;
     height: auto;
@@ -11434,26 +11403,26 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   }
 }
 
-/* line 119, src/_form-fields.scss */
+/* line 120, src/_form-fields.scss */
 #fc .fc-checkout__main__contents .fc-address-entry .fc-form-label {
   padding-top: 7px;
   text-align: right;
 }
 
-/* line 124, src/_form-fields.scss */
+/* line 125, src/_form-fields.scss */
 #fc .fc-checkout__main__contents .fc-address-entry .fc-shipping-results .fc-form-label,
 #fc .fc-checkout__main__contents .fc-address-entry .fc-input-group-container .fc-form-label {
   text-align: left;
 }
 
-/* line 128, src/_form-fields.scss */
+/* line 129, src/_form-fields.scss */
 #fc .fc-checkout__main__contents .fc-address-entry .fc-input-group-container .fc-form-label {
   padding-top: 0;
   line-height: 2.9em;
 }
 
 @media (max-width: 767px) {
-  /* line 135, src/_form-fields.scss */
+  /* line 136, src/_form-fields.scss */
   #fc label.focused {
     color: #64696f;
     left: 10%;
@@ -11466,37 +11435,36 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   }
 }
 
-/* line 149, src/_form-fields.scss */
+/* line 150, src/_form-fields.scss */
 #fc select.fc-form-control {
   padding-left: 6px;
   padding-right: 0px;
-  border-bottom: 1px solid #cccccc;
-  box-shadow: 0px 0px 0px #ffffff;
-  -webkit-box-shadow: none;
+  border: 1px solid #e8e8e8;
+  box-shadow: unset;
 }
 
 @media (min-width: 992px) {
-  /* line 149, src/_form-fields.scss */
+  /* line 150, src/_form-fields.scss */
   #fc select.fc-form-control {
     padding-top: 8px;
-    border-top: 1px solid #cccccc;
+    border: 1px solid #e8e8e8;
   }
 }
 
-/* line 164, src/_form-fields.scss */
+/* line 163, src/_form-fields.scss */
 #fc select.fc-form-control:focus {
-  border: 1px solid #badaf2;
+  border: 1px solid #8bbafe;
   transition: border 0.2s ease-in-out;
-  box-shadow: 0px 0px 2px 2px #badaf2;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
 }
 
-/* line 172, src/_form-fields.scss */
+/* line 171, src/_form-fields.scss */
 #fc .fc-input-group-container {
-  padding: 5px 28px 0px 28px;
+  padding: 0;
   position: relative;
 }
 
-/* line 176, src/_form-fields.scss */
+/* line 175, src/_form-fields.scss */
 #fc .fc-input-group-container .fc-form-group {
   margin-top: -40px;
   max-height: 0;
@@ -11504,22 +11472,22 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   transition: all 0.2s ease-in 0.2s;
 }
 
-/* line 182, src/_form-fields.scss */
+/* line 181, src/_form-fields.scss */
 #fc .fc-input-group-container .fc-form-group select {
   background: #ffffff;
 }
 
-/* line 186, src/_form-fields.scss */
+/* line 185, src/_form-fields.scss */
 #fc .fc-input-group-container .fc-form-group input {
   background: #ffffff;
 }
 
-/* line 190, src/_form-fields.scss */
+/* line 189, src/_form-fields.scss */
 #fc .fc-input-group-container .fc-form-group label {
   padding-left: 0;
 }
 
-/* line 196, src/_form-fields.scss */
+/* line 195, src/_form-fields.scss */
 #fc .fc-input-group-container--active {
   padding-bottom: 10px;
   background-color: #f1f1f1;
@@ -11528,20 +11496,20 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   transition: background-color 0.2s linear 0.2s;
 }
 
-/* line 203, src/_form-fields.scss */
+/* line 202, src/_form-fields.scss */
 #fc .fc-input-group-container--active p {
-  font-size: 95%;
+  font-size: 1rem;
 }
 
-/* line 207, src/_form-fields.scss */
+/* line 206, src/_form-fields.scss */
 #fc .fc-input-group-container--active .fc-form-group {
   opacity: 1;
-  margin: 1em 0px 10px 0;
+  margin: 1em 28px 10px;
   max-height: 200px;
   transition: all 0.2s ease-in 0.2s;
 }
 
-/* line 214, src/_form-fields.scss */
+/* line 213, src/_form-fields.scss */
 #fc .fc-input-group-container--active .fc-input-group-container__title {
   background-color: #e1e1e1;
   transition: background-color 0.2s linear 0.2s;
@@ -11550,47 +11518,47 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   min-height: 40px;
 }
 
-/* line 221, src/_form-fields.scss */
+/* line 220, src/_form-fields.scss */
 #fc .fc-input-group-container--active .fc-input-group-container__title input {
   left: -2px;
   margin-top: -6px;
 }
 
-/* line 227, src/_form-fields.scss */
+/* line 226, src/_form-fields.scss */
 #fc .fc-input-group-container--active .fc-input-group-container__title--forced {
   background-color: #bae086;
   text-shadow: none;
   padding-left: 23px;
 }
 
-/* line 237, src/_form-fields.scss */
+/* line 236, src/_form-fields.scss */
 #fc .fc-input-group-container--checkbox .fc-form-control {
   top: 13px;
 }
 
-/* line 242, src/_form-fields.scss */
+/* line 241, src/_form-fields.scss */
 #fc .fc-input-group-container--radios .fc-radio {
   margin-bottom: 0.5em;
 }
 
-/* line 246, src/_form-fields.scss */
+/* line 245, src/_form-fields.scss */
 #fc .fc-input-group-container--checkbox .fc-input-group-container__title:before {
   border-radius: 7px;
 }
 
-/* line 250, src/_form-fields.scss */
+/* line 249, src/_form-fields.scss */
 #fc .fc-input-group-container--checkbox .fc-input-group-container__title input,
 #fc .fc-input-group-container--radio .fc-input-group-container__title input {
   margin-left: -28px;
   margin-top: -6px;
 }
 
-/* line 255, src/_form-fields.scss */
+/* line 254, src/_form-fields.scss */
 #fc .fc-input-group-container--checkbox .fc-input-group-container__title input {
   margin-top: -7px;
 }
 
-/* line 260, src/_form-fields.scss */
+/* line 259, src/_form-fields.scss */
 #fc .fc-input-group-container .fc-form-group input[type='checkbox'],
 #fc .fc-input-group-container .fc-form-group input[type='radio'] {
   float: left;
@@ -11607,32 +11575,32 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   box-shadow: none;
 }
 
-/* line 279, src/_form-fields.scss */
+/* line 278, src/_form-fields.scss */
 #fc .fc-form-group .fc-input-group-container__title {
   line-height: 25px;
   display: block !important;
-  background-color: none;
-  border-radius: 5px 5px 0 0;
-  margin: -5px -28px 0 -28px;
+  background-color: #e8e8e8;
+  border-radius: 0;
+  margin: 0;
   padding-left: 28px;
   padding-right: 28px;
   text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
   max-width: none;
 }
 
-/* line 291, src/_form-fields.scss */
+/* line 290, src/_form-fields.scss */
 #fc .fc-form-group .fc-input-group-container__title .fc-payment-no-logo {
   line-height: 2.9em;
 }
 
-/* line 295, src/_form-fields.scss */
+/* line 294, src/_form-fields.scss */
 #fc .fc-form-group .fc-input-group-container__title img {
   position: relative;
   top: -2px;
   display: inline-block;
 }
 
-/* line 304, src/_form-fields.scss */
+/* line 303, src/_form-fields.scss */
 #fc .fc-input-group-container__no-title .fc-form-control,
 #fc .fc-input-group-container__title .fc-form-control {
   position: relative;
@@ -11645,10 +11613,10 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   width: 16px;
   margin-top: 0;
   margin-right: 12px;
-  box-shadow: none;
+  box-shadow: unset;
 }
 
-/* line 318, src/_form-fields.scss */
+/* line 317, src/_form-fields.scss */
 #fc .fc-input-group-container__no-title:before,
 #fc .fc-input-group-container__title:before {
   content: '';
@@ -11664,7 +11632,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   clip: rect(0px, 100px, 100px, 6px);
 }
 
-/* line 332, src/_form-fields.scss */
+/* line 331, src/_form-fields.scss */
 #fc .fc-input-group-container__no-title.fc-input-group-container__title--forced:before,
 #fc .fc-input-group-container__title.fc-input-group-container__title--forced:before {
   background: inherit;
@@ -11672,17 +11640,17 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   height: 0;
 }
 
-/* line 341, src/_form-fields.scss */
+/* line 340, src/_form-fields.scss */
 #fc #fc-additional-fields .fc-form-group {
   margin-bottom: 8px;
 }
 
-/* line 346, src/_form-fields.scss */
+/* line 345, src/_form-fields.scss */
 #fc .fc-container__grid--use-different-address .fc-input-group-container--checkbox {
   padding-left: 0;
 }
 
-/* line 350, src/_form-fields.scss */
+/* line 349, src/_form-fields.scss */
 #fc .fc-form-label--tos a {
   color: #3c3b38;
   text-decoration: underline;
