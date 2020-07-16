@@ -53,7 +53,7 @@
 
 .fc-form-control:focus {
 	box-shadow: $inputShadowFocus;
-	border-color: $inputBorderFocus;
+	border: 1px solid $inputBorderFocus;
 }
 
 @media ($smallScreen) {
