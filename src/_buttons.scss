@@ -71,6 +71,7 @@
 
 .fc-button {
 	// @include background(linear-gradient($grayLightest, $grayLight) top 0%);
+	background-image: unset;
 	line-height: 1.9; /* to match the .fc-form-control elements */
 	background: $white; /* Old browsers */
 	border: 1px solid $btnBorder;
@@ -80,8 +81,8 @@
 }
 .fc-input-group__button > .fc-button:hover,
 .fc-button:hover {
-	background: $grayLightest; /* Old browsers */
 	@include background(linear-gradient($grayLightest, $grayLight) top 0%);
+	background: $btnActiveBackground; /* Old browsers */
 	color: $btnActiveText;
 	border-color: $btnActiveBorder;
 	z-index: 0;
