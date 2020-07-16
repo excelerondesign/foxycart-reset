@@ -253,6 +253,7 @@ select.fc-form-control:focus {
 }
 .fc-input-group-container--checkbox .fc-input-group-container__title input {
 	margin-top: -7px;
+	display: none;
 }
 
 .fc-input-group-container .fc-form-group {
@@ -276,7 +277,7 @@ select.fc-form-control:focus {
 // Label Titles
 
 .fc-form-group .fc-input-group-container__title {
-	//min-height: 25px;
+	min-height: 25px;
 	line-height: 25px;
 	display: block !important;
 	background-color: $grayLight;
