@@ -111,7 +111,7 @@
 			linear-gradient(to bottom, #458c33 0%, #458c33 100%)
 		); /* W3C */
 		text-shadow: unset;
-		@include transition(all 0.1s linear);
+		transition: unset;
 	}
 }
 

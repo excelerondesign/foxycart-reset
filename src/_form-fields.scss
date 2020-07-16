@@ -102,7 +102,7 @@
 .fc-form-label {
 	font-weight: normal;
 	color: $primary;
-	@include transition(opacity 0.2s linear);
+	transition: unset;
 
 	@media ($smallScreen) {
 		&.focused {
@@ -111,7 +111,7 @@
 			margin: 0;
 			overflow: visible;
 			clip: auto;
-			@include transition(opacity 0.2s linear);
+			transition: unset;
 		}
 	}
 }
@@ -141,7 +141,7 @@
 		font-size: 0.85em;
 		line-height: 1.2em;
 		opacity: 1;
-		@include transition(opacity 0.2s linear);
+		transition: unset;
 	}
 }
 
@@ -162,7 +162,7 @@ select.fc-form-control {
 
 select.fc-form-control:focus {
 	border: 1px solid $inputBorderFocus;
-	@include transition(border 0.2s ease-in-out);
+	transition: unset;
 	box-shadow: $inputShadowFocus;
 }
 
@@ -176,7 +176,7 @@ select.fc-form-control:focus {
 		margin-top: -40px;
 		max-height: 0; // Hidden by default
 		opacity: 0; // Hidden by default
-		@include transition(all 0.2s ease-in 0.2s);
+		transition: unset;
 
 		select {
 			background: $white;
@@ -197,7 +197,7 @@ select.fc-form-control:focus {
 	background-color: $grayLighter;
 	border-radius: 0;
 	border: 2px solid $white;
-	@include transition(background-color 0.2s linear 0.2s);
+	transition: unset;
 
 	p {
 		font-size: 1rem;
@@ -207,12 +207,12 @@ select.fc-form-control:focus {
 		opacity: 1;
 		margin: 1em 28px 10px;
 		max-height: 200px;
-		@include transition(all 0.2s ease-in 0.2s);
+		transition: unset;
 	}
 
 	.fc-input-group-container__title {
 		background-color: #e1e1e1;
-		@include transition(background-color 0.2s linear 0.2s);
+		transition: unset;
 		padding-top: 7px;
 		padding-bottom: 7px;
 		min-height: 40px;

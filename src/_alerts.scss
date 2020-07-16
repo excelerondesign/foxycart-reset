@@ -313,11 +313,11 @@
 		background: lighten($notice, 40%);
 		border: 2px solid $notice;
 		border-radius: 5px;
-		@include transition(background 0.2s linear, border 0.2s linear);
+		transition: unset;
 
 		&:focus {
 			background: $white;
-			@include transition(background 0.2s linear);
+			transition: unset;
 		}
 	}
 
@@ -327,15 +327,11 @@
 		padding-left: 10px;
 		background: lighten($notice, 40%);
 		border: 2px solid $notice;
-		@include transition(
-			background 0.2s linear,
-			border 0.2s linear,
-			padding 0.2s linear
-		);
+		transition: unset;
 
 		&:focus {
 			background: $white;
-			@include transition(background 0.2s linear);
+			transition: unset;
 		}
 	}
 
@@ -343,7 +339,7 @@
 		border: 2px solid $notice;
 		border-left: none;
 		line-height: 1.9;
-		@include transition(border 0.2s linear);
+		transition: unset;
 
 		&:hover {
 			border-color: $notice;
@@ -363,7 +359,7 @@
 		border-color: $notice;
 		border-style: solid;
 		left: -8px;
-		@include transition(border 0.2s linear);
+		transition: unset;
 		@media ($medScreen) {
 			@include animation(fadeInErrorBorder 0.2s linear 0s 1);
 		}
@@ -387,7 +383,7 @@
 		.fc-alert-container--error
 		.fc-form-control {
 		border: 2px solid $notice;
-		@include transition(background 0.2s linear, border 0.2s linear);
+		transition: unset;
 	}
 
 	.fc-input-group--full-page {
@@ -436,7 +432,7 @@
 		border-left: none;
 		line-height: 1.9em;
 		height: 39px;
-		@include transition(border 0.2s linear);
+		transition: unset;
 
 		&:hover {
 			border-color: $info;
