@@ -85,7 +85,6 @@ var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
 var prefix = require('autoprefixer');
 var minify = require('cssnano');
-var sourcemaps = require('gulp-sourcemaps');
 
 // SVGs
 // var svgmin = require('gulp-svgmin');
@@ -188,13 +187,11 @@ var buildStyles = function (done) {
 
 	// Run tasks on all Sass files
 	return src(paths.styles.input)
-		.pipe(sourcemaps.init())
 		.pipe(
 			sass({
 				outputStyle: 'expanded',
-				sourceComments: true,
 				includePaths: bourbon.includePaths,
-			})
+			}).on('error', sass.logError)
 		)
 		.pipe(
 			postcss([
@@ -204,7 +201,6 @@ var buildStyles = function (done) {
 				}),
 			])
 		)
-		.pipe(sourcemaps.write(paths.styles.output))
 		.pipe(dest(paths.styles.output))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(
