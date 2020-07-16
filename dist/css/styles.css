@@ -50,6 +50,14 @@
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
 }
 
+@media (prefers-reduced-motion: reduce) {
+  /* line 54, src/styles.scss */
+  * {
+    animation: unset !important;
+    transition: none !important;
+  }
+}
+
 @keyframes fadeInInfoBorder {
   from {
     border: 2px solid rgba(217, 237, 247, 0);
@@ -128,7 +136,7 @@
   }
 }
 
-/* line 57, src/styles.scss */
+/* line 65, src/styles.scss */
 #fc {
   /*!
  * Bootstrap v3.4.1 (https://getbootstrap.com/)
@@ -10422,6 +10430,12 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   left: -9999px;
 }
 
+/* line 279, src/_fc-to-bootstrap.scss */
+#fc .fc-checkout__main__form,
+#fc .fc-address-entry {
+  padding-top: 0;
+}
+
 /* line 1, src/_defaults.scss */
 #fc html,
 #fc body {
@@ -11114,40 +11128,37 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 /* line 62, src/_buttons.scss */
-#fc .fc-button {
-  transition: all 0.1s linear;
-  line-height: 1.9;
-  /* to match the .fc-form-control elements */
-}
-
-/* line 66, src/_buttons.scss */
 #fc .fc-form-control--static .fc-button {
   margin-top: -7px;
 }
 
-/* line 70, src/_buttons.scss */
+/* line 66, src/_buttons.scss */
 #fc .fc-button--cancel {
   font-size: 12px;
   padding-top: 1px;
   padding-bottom: 1px;
 }
 
-/* line 76, src/_buttons.scss */
+/* line 72, src/_buttons.scss */
 #fc .fc-button {
-  background: #f9f9f9;
+  background-image: unset;
+  line-height: 1.9;
+  /* to match the .fc-form-control elements */
+  background: #ffffff;
   /* Old browsers */
-  background: linear-gradient(#f9f9f9, #e8e8e8) top 0%;
   border: 1px solid #e8e8e8;
   color: #495057;
-  text-shadow: 1px 1px 0px white;
+  transition: unset;
+  text-shadow: unset;
+  border-radius: unset;
 }
 
 /* line 83, src/_buttons.scss */
 #fc .fc-input-group__button > .fc-button:hover,
 #fc .fc-button:hover {
-  background: #f9f9f9;
-  /* Old browsers */
   background: linear-gradient(#f9f9f9, #e8e8e8) top 0%;
+  background: #e8e8e8;
+  /* Old browsers */
   color: #555555;
   border-color: #bbbbbb;
   z-index: 0;
@@ -11164,10 +11175,10 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   color: #ffffff;
   background: linear-gradient(to bottom, #73b263 0%, #458c33 100%);
   /* W3C */
-  text-shadow: 1px 1px 0px #327123;
+  text-shadow: unset;
 }
 
-/* line 103, src/_buttons.scss */
+/* line 105, src/_buttons.scss */
 #fc .fc-action--checkout--button:hover, #fc .fc-action--checkout--button:focus,
 #fc .fc-button--subscription-cancel:hover,
 #fc .fc-button--subscription-cancel:focus,
@@ -11178,16 +11189,16 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   background-color: #a3d55e;
   background: linear-gradient(to bottom, #458c33 0%, #458c33 100%);
   /* W3C */
-  text-shadow: 1px 1px 0px #327123;
-  transition: all 0.1s linear;
+  text-shadow: unset;
+  transition: unset;
 }
 
-/* line 114, src/_buttons.scss */
+/* line 118, src/_buttons.scss */
 #fc .fc-button--submit .fc-spinner {
   margin-top: 0;
 }
 
-/* line 116, src/_buttons.scss */
+/* line 120, src/_buttons.scss */
 #fc .fc-button--submit .fc-spinner > div {
   background-color: #ffffff;
 }
@@ -11243,7 +11254,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   text-align: center;
   z-index: 1500;
   transform: scaleY(0);
-  transition: opacity 0.6s linear;
+  transition: unset;
 }
 
 /* line 14, src/_error-notifier.scss */
@@ -11255,20 +11266,21 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 #fc [data-fc-error-notifier].fc-alert.fc-alert--danger {
   padding: 0;
   border-radius: 0;
-  opacity: 1.0;
+  border-width: 0;
+  opacity: 1;
   transform: scaleY(1);
-  transition: opacity 0.6s linear;
+  transition: unset;
 }
 
-/* line 25, src/_error-notifier.scss */
+/* line 26, src/_error-notifier.scss */
 #fc [data-fc-error-notifier].fc-alert.fc-alert--danger h3 {
-  margin-top: .5em;
-  margin-bottom: .5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   color: #ffffff;
-  opacity: 1.0;
+  opacity: 1;
   padding: 0;
   text-shadow: none;
-  transition: opacity 0.6s linear;
+  transition: unset;
 }
 
 /* line 6, src/_form-fields.scss */
@@ -11388,7 +11400,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 #fc .fc-form-label {
   font-weight: normal;
   color: #76797e;
-  transition: opacity 0.2s linear;
+  transition: unset;
 }
 
 @media (max-width: 767px) {
@@ -11399,7 +11411,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
     margin: 0;
     overflow: visible;
     clip: auto;
-    transition: opacity 0.2s linear;
+    transition: unset;
   }
 }
 
@@ -11431,7 +11443,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
     font-size: 0.85em;
     line-height: 1.2em;
     opacity: 1;
-    transition: opacity 0.2s linear;
+    transition: unset;
   }
 }
 
@@ -11454,7 +11466,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 /* line 163, src/_form-fields.scss */
 #fc select.fc-form-control:focus {
   border: 1px solid #8bbafe;
-  transition: border 0.2s ease-in-out;
+  transition: unset;
   box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
 }
 
@@ -11469,7 +11481,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   margin-top: -40px;
   max-height: 0;
   opacity: 0;
-  transition: all 0.2s ease-in 0.2s;
+  transition: unset;
 }
 
 /* line 181, src/_form-fields.scss */
@@ -11490,10 +11502,10 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 /* line 195, src/_form-fields.scss */
 #fc .fc-input-group-container--active {
   padding-bottom: 10px;
-  background-color: #f1f1f1;
-  border-radius: 5px;
+  background-color: #f5f5f5;
+  border-radius: 0;
   border: 2px solid #ffffff;
-  transition: background-color 0.2s linear 0.2s;
+  transition: unset;
 }
 
 /* line 202, src/_form-fields.scss */
@@ -11506,13 +11518,13 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   opacity: 1;
   margin: 1em 28px 10px;
   max-height: 200px;
-  transition: all 0.2s ease-in 0.2s;
+  transition: unset;
 }
 
 /* line 213, src/_form-fields.scss */
 #fc .fc-input-group-container--active .fc-input-group-container__title {
   background-color: #e1e1e1;
-  transition: background-color 0.2s linear 0.2s;
+  transition: unset;
   padding-top: 7px;
   padding-bottom: 7px;
   min-height: 40px;
@@ -11527,7 +11539,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 /* line 226, src/_form-fields.scss */
 #fc .fc-input-group-container--active .fc-input-group-container__title--forced {
   background-color: #bae086;
-  text-shadow: none;
+  text-shadow: unset;
   padding-left: 23px;
 }
 
@@ -11543,7 +11555,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 
 /* line 245, src/_form-fields.scss */
 #fc .fc-input-group-container--checkbox .fc-input-group-container__title:before {
-  border-radius: 7px;
+  border-radius: 0;
 }
 
 /* line 249, src/_form-fields.scss */
@@ -11584,7 +11596,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   margin: 0;
   padding-left: 28px;
   padding-right: 28px;
-  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+  text-shadow: unset;
   max-width: none;
 }
 
@@ -11621,7 +11633,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 #fc .fc-input-group-container__title:before {
   content: '';
   background: #fff;
-  border-radius: 16px;
+  border-radius: 0;
   border: 2px solid #fff;
   width: 28px;
   height: 28px;
@@ -11956,179 +11968,179 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   color: #495057;
 }
 
-/* line 12, src/_payment-methods.scss */
+/* line 11, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment__method__logo {
   opacity: 1;
-  transition: all 0.2s ease-out 0.1s;
+  transition: unset;
 }
 
-/* line 18, src/_payment-methods.scss */
+/* line 17, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment--visa .fc-checkout__section--payment__method__logo {
   opacity: 0.2;
-  transition: all 0.2s ease-out 0.1s;
+  transition: unset;
 }
 
 /* line 22, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment--visa .fc-checkout__section--payment__method__logo.fc-checkout__section--payment__method__logo--visa {
   opacity: 1;
-  transition: all 0.2s ease-out 0.1s;
+  transition: unset;
 }
 
-/* line 18, src/_payment-methods.scss */
+/* line 17, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment--mastercard .fc-checkout__section--payment__method__logo {
   opacity: 0.2;
-  transition: all 0.2s ease-out 0.1s;
+  transition: unset;
 }
 
 /* line 22, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment--mastercard .fc-checkout__section--payment__method__logo.fc-checkout__section--payment__method__logo--mastercard {
   opacity: 1;
-  transition: all 0.2s ease-out 0.1s;
+  transition: unset;
 }
 
-/* line 18, src/_payment-methods.scss */
+/* line 17, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment--amex .fc-checkout__section--payment__method__logo {
   opacity: 0.2;
-  transition: all 0.2s ease-out 0.1s;
+  transition: unset;
 }
 
 /* line 22, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment--amex .fc-checkout__section--payment__method__logo.fc-checkout__section--payment__method__logo--amex {
   opacity: 1;
-  transition: all 0.2s ease-out 0.1s;
+  transition: unset;
 }
 
-/* line 18, src/_payment-methods.scss */
+/* line 17, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment--discover .fc-checkout__section--payment__method__logo {
   opacity: 0.2;
-  transition: all 0.2s ease-out 0.1s;
+  transition: unset;
 }
 
 /* line 22, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment--discover .fc-checkout__section--payment__method__logo.fc-checkout__section--payment__method__logo--discover {
   opacity: 1;
-  transition: all 0.2s ease-out 0.1s;
+  transition: unset;
 }
 
-/* line 18, src/_payment-methods.scss */
+/* line 17, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment--dinersclub .fc-checkout__section--payment__method__logo {
   opacity: 0.2;
-  transition: all 0.2s ease-out 0.1s;
+  transition: unset;
 }
 
 /* line 22, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment--dinersclub .fc-checkout__section--payment__method__logo.fc-checkout__section--payment__method__logo--dinersclub {
   opacity: 1;
-  transition: all 0.2s ease-out 0.1s;
+  transition: unset;
 }
 
-/* line 18, src/_payment-methods.scss */
+/* line 17, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment--maestro .fc-checkout__section--payment__method__logo {
   opacity: 0.2;
-  transition: all 0.2s ease-out 0.1s;
+  transition: unset;
 }
 
 /* line 22, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment--maestro .fc-checkout__section--payment__method__logo.fc-checkout__section--payment__method__logo--maestro {
   opacity: 1;
-  transition: all 0.2s ease-out 0.1s;
+  transition: unset;
 }
 
-/* line 18, src/_payment-methods.scss */
+/* line 17, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment--laser .fc-checkout__section--payment__method__logo {
   opacity: 0.2;
-  transition: all 0.2s ease-out 0.1s;
+  transition: unset;
 }
 
 /* line 22, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment--laser .fc-checkout__section--payment__method__logo.fc-checkout__section--payment__method__logo--laser {
   opacity: 1;
-  transition: all 0.2s ease-out 0.1s;
+  transition: unset;
 }
 
-/* line 18, src/_payment-methods.scss */
+/* line 17, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment--jcb .fc-checkout__section--payment__method__logo {
   opacity: 0.2;
-  transition: all 0.2s ease-out 0.1s;
+  transition: unset;
 }
 
 /* line 22, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment--jcb .fc-checkout__section--payment__method__logo.fc-checkout__section--payment__method__logo--jcb {
   opacity: 1;
-  transition: all 0.2s ease-out 0.1s;
+  transition: unset;
 }
 
-/* line 31, src/_payment-methods.scss */
+/* line 29, src/_payment-methods.scss */
 #fc .fc-container__grid--plastic-new-exp-month {
   padding-left: 10px;
   padding-right: 5px;
   width: 28%;
 }
 
-/* line 36, src/_payment-methods.scss */
+/* line 34, src/_payment-methods.scss */
 #fc .fc-container__grid--plastic-new-exp-year,
 #fc .fc-container__grid--plastic-new-csc {
   padding-left: 5px;
   padding-right: 5px;
 }
 
-/* line 41, src/_payment-methods.scss */
+/* line 39, src/_payment-methods.scss */
 #fc .fc-container__grid--plastic-new-exp-year {
   width: 27%;
 }
 
-/* line 44, src/_payment-methods.scss */
+/* line 42, src/_payment-methods.scss */
 #fc .fc-container__grid--plastic-new-csc {
   width: 20%;
   padding-right: 0px;
 }
 
 @media (max-width: 767px) {
-  /* line 50, src/_payment-methods.scss */
+  /* line 48, src/_payment-methods.scss */
   #fc .fc-container__grid--plastic-new-exp-month {
     padding-left: 0px;
     width: 35%;
   }
-  /* line 54, src/_payment-methods.scss */
+  /* line 52, src/_payment-methods.scss */
   #fc .fc-container__grid--plastic-new-exp-year {
     width: 35%;
   }
-  /* line 57, src/_payment-methods.scss */
+  /* line 55, src/_payment-methods.scss */
   #fc .fc-container__grid--plastic-new-csc {
     width: 22%;
   }
 }
 
 @media (max-width: 480px) {
-  /* line 63, src/_payment-methods.scss */
+  /* line 61, src/_payment-methods.scss */
   #fc .fc-container__grid--plastic-new-exp-month,
   #fc .fc-container__grid--plastic-new-exp-year {
     width: 35%;
   }
-  /* line 67, src/_payment-methods.scss */
+  /* line 65, src/_payment-methods.scss */
   #fc .fc-container__grid--plastic-new-csc {
     width: 30%;
   }
 }
 
-/* line 73, src/_payment-methods.scss */
+/* line 71, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment {
   position: relative;
 }
 
-/* line 76, src/_payment-methods.scss */
+/* line 74, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment > .fc-form-group {
   margin-bottom: 0px;
 }
 
 @media (min-width: 768px) {
-  /* line 80, src/_payment-methods.scss */
+  /* line 78, src/_payment-methods.scss */
   #fc .fc-checkout__section--payment > .fc-form-group {
     margin-bottom: 8px;
   }
 }
 
-/* line 86, src/_payment-methods.scss */
+/* line 83, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment #fc-icon-lock-large {
   position: absolute;
   color: #e8e8e8;
@@ -12137,57 +12149,57 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   font-size: 130px;
 }
 
-/* line 94, src/_payment-methods.scss */
+/* line 91, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment .fc-payment-method--plastic__saved,
 #fc .fc-checkout__section--payment .fc-payment-method--plastic__new {
   padding-top: 0;
 }
 
-/* line 98, src/_payment-methods.scss */
+/* line 95, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment .fc-payment-method--plastic__saved .fc-form-group,
 #fc .fc-checkout__section--payment .fc-payment-method--plastic__new .fc-form-group {
   margin-top: 5px;
-  margin-bottom: .7em;
+  margin-bottom: 0.7em;
 }
 
-/* line 102, src/_payment-methods.scss */
+/* line 99, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment .fc-payment-method--plastic__saved .fc-form-group:last-child,
 #fc .fc-checkout__section--payment .fc-payment-method--plastic__new .fc-form-group:last-child {
   margin-bottom: 10px;
 }
 
 @media (max-width: 767px) {
-  /* line 106, src/_payment-methods.scss */
+  /* line 103, src/_payment-methods.scss */
   #fc .fc-checkout__section--payment .fc-container__grid--static--plastic-saved-csc {
     padding-right: 0;
   }
 }
 
 @media (max-width: 991px) {
-  /* line 113, src/_payment-methods.scss */
+  /* line 110, src/_payment-methods.scss */
   #fc .fc-checkout__section--payment .fc-payment-method--plastic__saved .fc-input-group-container--active {
     min-height: 160px;
   }
 }
 
 @media (max-width: 480px) {
-  /* line 113, src/_payment-methods.scss */
+  /* line 110, src/_payment-methods.scss */
   #fc .fc-checkout__section--payment .fc-payment-method--plastic__saved .fc-input-group-container--active {
     min-height: 27px;
   }
 }
 
-/* line 123, src/_payment-methods.scss */
+/* line 120, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment .fc-payment-method--plastic__saved .fc-form-group:first-of-type {
   margin-bottom: 0;
 }
 
-/* line 126, src/_payment-methods.scss */
+/* line 123, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment .fc-payment-method--plastic__saved .fc-form-group .fc-form-label {
   padding-top: 7px;
 }
 
-/* line 130, src/_payment-methods.scss */
+/* line 129, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment .fc-payment-method--plastic__saved .fc-svg-icon--lock {
   position: absolute;
   top: 56px;
@@ -12197,28 +12209,28 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 @media (max-width: 480px) {
-  /* line 130, src/_payment-methods.scss */
+  /* line 129, src/_payment-methods.scss */
   #fc .fc-checkout__section--payment .fc-payment-method--plastic__saved .fc-svg-icon--lock {
     display: none !important;
   }
 }
 
-/* line 141, src/_payment-methods.scss */
+/* line 140, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment .fc-payment-method--plastic__saved .fc-input-group-container--active .fc-form-control--static {
   font-size: 100% !important;
 }
 
-/* line 147, src/_payment-methods.scss */
+/* line 146, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment .fc-payment-method--plastic__new .fc-input-group-container__title--forced {
   padding-left: 40px;
 }
 
-/* line 150, src/_payment-methods.scss */
+/* line 149, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment .fc-payment-method--plastic__new .fc-form-group:first-of-type {
   margin-top: 15px;
 }
 
-/* line 153, src/_payment-methods.scss */
+/* line 152, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment .fc-payment-method--plastic__new .fc-svg-icon--lock {
   position: absolute;
   top: 9px;
@@ -12227,21 +12239,21 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   color: #a3d55e;
 }
 
-/* line 169, src/_payment-methods.scss */
+/* line 168, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment .fc-checkout__section--payment__method__logo,
 #fc .fc-checkout__section--payment .fc-payment-method-logo {
   display: inline-block;
   text-align: left;
 }
 
-/* line 175, src/_payment-methods.scss */
+/* line 174, src/_payment-methods.scss */
 #fc .fc-checkout__section--payment .fc-checkout__section--payment__method__logo img,
 #fc .fc-checkout__section--payment .fc-payment-method-logo img {
   height: 23px;
   margin-right: 5px;
 }
 
-/* line 185, src/_payment-methods.scss */
+/* line 183, src/_payment-methods.scss */
 #fc .fc-form-control--new-cc-number,
 #fc .fc-payment-method--plastic__saved .fc-form-control {
   padding-right: 0;
@@ -12249,47 +12261,47 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   background: #ffffff;
 }
 
-/* line 192, src/_payment-methods.scss */
+/* line 190, src/_payment-methods.scss */
 #fc .fc-container__grid--input--plastic-new-card-number {
   padding-right: 0px;
   padding-left: 0;
 }
 
 @media (max-width: 480px) {
-  /* line 192, src/_payment-methods.scss */
+  /* line 190, src/_payment-methods.scss */
   #fc .fc-container__grid--input--plastic-new-card-number {
     width: 100%;
   }
 }
 
-/* line 201, src/_payment-methods.scss */
+/* line 199, src/_payment-methods.scss */
 #fc .fc-container__grid--payment-method .fc-form-label--new-cc-exp-month {
   margin-top: 7px;
   padding-left: 0;
 }
 
 @media (max-width: 991px) {
-  /* line 207, src/_payment-methods.scss */
+  /* line 205, src/_payment-methods.scss */
   #fc .fc-form-label__pos-masked-number,
   #fc .fc-form-label__pos-expiration {
     text-align: left;
   }
 }
 
-/* line 214, src/_payment-methods.scss */
+/* line 212, src/_payment-methods.scss */
 #fc .fc-container__static--pos-masked-number .fc-payment-method-logo img {
   margin-right: 0;
   margin-left: 5px;
 }
 
-/* line 222, src/_payment-methods.scss */
+/* line 220, src/_payment-methods.scss */
 #fc .fc-pos-modal .fc-modal--inner {
   min-height: 300px;
 }
 
-/* line 225, src/_payment-methods.scss */
-#fc [data-fc-id="fc-pos--swipe-ui"] {
-  background: #FFF;
+/* line 223, src/_payment-methods.scss */
+#fc [data-fc-id='fc-pos--swipe-ui'] {
+  background: #fff;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -12299,59 +12311,59 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   padding: 20px;
 }
 
-/* line 235, src/_payment-methods.scss */
-#fc [data-fc-id="fc-pos--swipe-ui"] h3 {
+/* line 233, src/_payment-methods.scss */
+#fc [data-fc-id='fc-pos--swipe-ui'] h3 {
   text-align: center;
   margin: 95px 0 30px;
   color: #000;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
 }
 
-/* line 242, src/_payment-methods.scss */
+/* line 240, src/_payment-methods.scss */
 #fc .fc-pos-modal--header {
   margin: -20px -20px 20px;
   padding: 20px;
-  background: #F1F1F1;
+  background: #f1f1f1;
   text-align: center;
 }
 
-/* line 248, src/_payment-methods.scss */
+/* line 246, src/_payment-methods.scss */
 #fc .fc-pos-modal--header h2 {
   font-size: 20px;
 }
 
-/* line 251, src/_payment-methods.scss */
+/* line 249, src/_payment-methods.scss */
 #fc .fc-pos-modal--header h3 {
   margin: 0 0 5px;
   font-size: 16px;
 }
 
-/* line 255, src/_payment-methods.scss */
+/* line 253, src/_payment-methods.scss */
 #fc .fc-pos-modal--header ul {
   list-style: none;
-  border-top: 1px solid #CCC;
+  border-top: 1px solid #ccc;
   margin: 0;
   padding: 10px 0 0;
 }
 
-/* line 261, src/_payment-methods.scss */
+/* line 259, src/_payment-methods.scss */
 #fc .fc-pos-modal--header .fc-pos-modal--email {
   margin-top: 8px;
 }
 
-/* line 264, src/_payment-methods.scss */
+/* line 262, src/_payment-methods.scss */
 #fc .fc-pos-modal--header .fc-payment-method-logo {
   display: inline-block;
   text-align: left;
 }
 
-/* line 268, src/_payment-methods.scss */
+/* line 266, src/_payment-methods.scss */
 #fc .fc-pos-modal--header .fc-payment-method-logo img {
   height: 20px;
   margin-left: 5px;
 }
 
-/* line 274, src/_payment-methods.scss */
+/* line 272, src/_payment-methods.scss */
 #fc #fc_checkout_pos_encryption_number {
   position: absolute;
   height: 0px;
@@ -12417,10 +12429,10 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 /* line 8, src/_products.scss */
 #fc .fc-cart__items .fc-cart__item__remove a {
   color: #76797e;
-  opacity: .6;
+  opacity: 0.6;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transition: color 0.1s linear, opacity 0.1s linear;
+  transition: unset;
   font-weight: normal;
 }
 
@@ -12431,7 +12443,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   text-decoration: none;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transition: color 0.1s linear, opacity 0.1s linear;
+  transition: unset;
 }
 
 /* line 25, src/_products.scss */
@@ -12615,14 +12627,14 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 @media (min-width: 768px) {
-  /* line 136, src/_products.scss */
+  /* line 135, src/_products.scss */
   #fc .fc-cart__item__image {
     width: 34%;
     margin-left: -23%;
   }
 }
 
-/* line 141, src/_products.scss */
+/* line 140, src/_products.scss */
 #fc .fc-cart__item__image span {
   float: left;
   border: 5px solid #e4e4e4;
@@ -12630,25 +12642,25 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   max-width: 100%;
 }
 
-/* line 149, src/_products.scss */
+/* line 148, src/_products.scss */
 #fc .fc-cart__item--child-product .fc-cart__item__image span {
   border: 3px solid #ffffff;
 }
 
-/* line 153, src/_products.scss */
+/* line 152, src/_products.scss */
 #fc .fc-cart__item__name {
   margin-bottom: 5px;
   font-weight: bold;
   color: #2c2d2f;
 }
 
-/* line 158, src/_products.scss */
+/* line 157, src/_products.scss */
 #fc .fc-cart__item__option__value {
   color: #76797e;
   white-space: inherit;
 }
 
-/* line 163, src/_products.scss */
+/* line 162, src/_products.scss */
 #fc .fc-cart__item__option--subscription-details ul {
   list-style: none;
   padding: 0 0 0 5px;
@@ -12657,7 +12669,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   font-size: 12px;
 }
 
-/* line 173, src/_products.scss */
+/* line 171, src/_products.scss */
 #fc .fc-cart__item__actions .fc-actions-container {
   border-left: none;
   margin: 0;
@@ -12666,22 +12678,22 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   text-align: left;
 }
 
-/* line 180, src/_products.scss */
+/* line 178, src/_products.scss */
 #fc .fc-cart__item__actions .fc-actions-container li:first-child {
   padding-left: 0;
 }
 
-/* line 186, src/_products.scss */
+/* line 184, src/_products.scss */
 #fc .fc-cart__item__totals {
   padding: 0;
 }
 
-/* line 189, src/_products.scss */
+/* line 187, src/_products.scss */
 #fc .fc-cart__item__totals .fc-container__row {
   margin: 0;
 }
 
-/* line 194, src/_products.scss */
+/* line 192, src/_products.scss */
 #fc .fc-cart__item__quantity .fc-form-control {
   margin-top: 4px;
   height: auto;
@@ -12693,86 +12705,86 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 @media (max-width: 767px) {
-  /* line 194, src/_products.scss */
+  /* line 192, src/_products.scss */
   #fc .fc-cart__item__quantity .fc-form-control {
     text-align: center;
   }
 }
 
-/* line 208, src/_products.scss */
+/* line 206, src/_products.scss */
 #fc .fc-cart__item__total p {
   margin-bottom: 0;
   color: #3c3b38;
   font-weight: bold;
 }
 
-/* line 214, src/_products.scss */
+/* line 212, src/_products.scss */
 #fc .fc-cart__item__total,
 #fc .fc-cart__item__price__each {
   white-space: nowrap;
 }
 
-/* line 220, src/_products.scss */
+/* line 218, src/_products.scss */
 #fc .fc-cart__item__price p {
   font-size: 11px;
   color: #999;
   margin-bottom: 0;
 }
 
-/* line 225, src/_products.scss */
+/* line 223, src/_products.scss */
 #fc .fc-cart__item__price small {
   display: none;
 }
 
-/* line 231, src/_products.scss */
+/* line 229, src/_products.scss */
 #fc #fc-cart--fixed-width .fc-cart__items__header {
   display: none !important;
 }
 
-/* line 234, src/_products.scss */
+/* line 232, src/_products.scss */
 #fc #fc-cart--fixed-width .fc-cart__item__details-and-image {
   width: 75%;
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 242, src/_products.scss */
+/* line 240, src/_products.scss */
 #fc #fc-cart--fixed-width .fc-cart__item__image {
   padding-left: 5px;
   padding-right: 5px;
 }
 
-/* line 242, src/_products.scss */
+/* line 240, src/_products.scss */
 #fc #fc-cart--fixed-width .fc-cart__item__details {
   padding-left: 5px;
   padding-right: 5px;
 }
 
-/* line 242, src/_products.scss */
+/* line 240, src/_products.scss */
 #fc #fc-cart--fixed-width .fc-cart__item__total {
   padding-left: 5px;
   padding-right: 5px;
 }
 
-/* line 242, src/_products.scss */
+/* line 240, src/_products.scss */
 #fc #fc-cart--fixed-width .fc-cart__item__price {
   padding-left: 5px;
   padding-right: 5px;
 }
 
-/* line 242, src/_products.scss */
+/* line 240, src/_products.scss */
 #fc #fc-cart--fixed-width .fc-cart__item__quantity {
   padding-left: 5px;
   padding-right: 5px;
 }
 
-/* line 257, src/_products.scss */
+/* line 254, src/_products.scss */
 #fc #fc-cart--fixed-width .fc-cart__item__totals {
   width: 25%;
   text-align: right;
 }
 
-/* line 262, src/_products.scss */
+/* line 259, src/_products.scss */
 #fc #fc-cart--fixed-width .fc-cart__item__total,
 #fc #fc-cart--fixed-width .fc-cart__item__price,
 #fc #fc-cart--fixed-width .fc-cart__item__quantity {
@@ -12782,77 +12794,77 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   margin-bottom: 5px;
 }
 
-/* line 274, src/_products.scss */
+/* line 270, src/_products.scss */
 #fc .fc-context--cart-fullpage .fc-cart__items__header__total,
 #fc .fc-context--cart-fullpage .fc-cart__items__header__quantity,
 #fc .fc-context--cart-fullpage .fc-cart__items__header__price {
   padding: 0 5px 0 0;
 }
 
-/* line 280, src/_products.scss */
+/* line 276, src/_products.scss */
 #fc .fc-context--cart-fullpage .fc-cart__item__price,
 #fc .fc-context--cart-fullpage .fc-cart__item__quantity {
   padding: 0 5px 0 0;
 }
 
-/* line 284, src/_products.scss */
+/* line 280, src/_products.scss */
 #fc .fc-context--cart-fullpage .fc-cart__item__total {
   padding: 0;
 }
 
-/* line 288, src/_products.scss */
+/* line 284, src/_products.scss */
 #fc .fc-context--cart-fullpage .fc-cart__item__image {
   width: 21.666667%;
   margin-left: -5%;
 }
 
-/* line 292, src/_products.scss */
+/* line 288, src/_products.scss */
 #fc .fc-context--cart-fullpage .fc-cart__item__image span {
   float: none;
   border: none;
 }
 
-/* line 298, src/_products.scss */
+/* line 294, src/_products.scss */
 #fc .fc-context--cart-fullpage .fc-cart__item__image__img {
   margin-top: 5px;
 }
 
 @media (min-width: 768px) {
-  /* line 303, src/_products.scss */
+  /* line 299, src/_products.scss */
   #fc .fc-context--cart-fullpage .fc-cart__item__total {
     /*       text-align:right; */
   }
-  /* line 306, src/_products.scss */
+  /* line 302, src/_products.scss */
   #fc .fc-context--cart-fullpage .fc-cart__item__quantity {
     /*       text-align:center; */
   }
-  /* line 309, src/_products.scss */
+  /* line 305, src/_products.scss */
   #fc .fc-context--cart-fullpage .fc-cart__item__price {
     /*       text-align:left; */
   }
 }
 
 @media (min-width: 768px) {
-  /* line 317, src/_products.scss */
+  /* line 312, src/_products.scss */
   #fc .fc-cart__item {
     padding: 15px 20px 10px;
     font-size: 14px;
   }
-  /* line 321, src/_products.scss */
+  /* line 316, src/_products.scss */
   #fc .fc-cart__item__image {
     padding-right: 0;
     padding-left: 0;
   }
-  /* line 326, src/_products.scss */
+  /* line 321, src/_products.scss */
   #fc .fc-cart__item__image .fc-cart__item__details {
     padding-left: 15px;
   }
-  /* line 331, src/_products.scss */
+  /* line 325, src/_products.scss */
   #fc .fc-cart__item__quantity {
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 335, src/_products.scss */
+  /* line 329, src/_products.scss */
   #fc .fc-cart__item__quantity .fc-form-control {
     width: 3em;
     font-size: 14px;
@@ -12860,7 +12872,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
     padding: 5px 2px;
     height: auto;
   }
-  /* line 344, src/_products.scss */
+  /* line 338, src/_products.scss */
   #fc .fc-cart__item__price p {
     font-size: 14px;
   }
@@ -13031,7 +13043,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 
 @media print {
   @page {
-    /* line 57, src/styles.scss */
+    /* line 65, src/styles.scss */
     #fc {
       size: auto;
       margin-left: 2cm;
@@ -13484,12 +13496,12 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   margin-right: 5px;
 }
 
-/* line 2, src/_alerts.scss */
+/* line 1, src/_alerts.scss */
 #fc .text-info {
   padding: 5px 12px 10px;
 }
 
-/* line 5, src/_alerts.scss */
+/* line 6, src/_alerts.scss */
 #fc .fc-messages__empty-notification {
   background-color: #a3d55e;
   border-radius: 6px;
@@ -13498,7 +13510,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   text-align: center;
 }
 
-/* line 12, src/_alerts.scss */
+/* line 13, src/_alerts.scss */
 #fc .fc-messages__empty-notification a {
   color: #3e5300;
   font-size: 1.2em;
@@ -13543,54 +13555,54 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   color: #64696f;
 }
 
-/* line 61, src/_alerts.scss */
+/* line 59, src/_alerts.scss */
 #fc .fc-alert {
   border: 0;
   color: #ffffff;
   padding: 10px;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  text-shadow: unset;
   margin-top: -4px;
   margin-bottom: 0;
 }
 
-/* line 69, src/_alerts.scss */
+/* line 67, src/_alerts.scss */
 #fc .fc-alert a {
   text-decoration: underline;
   color: #ffffff;
 }
 
-/* line 74, src/_alerts.scss */
+/* line 72, src/_alerts.scss */
 #fc .fc-alert p {
   margin-bottom: 15px;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
-/* line 78, src/_alerts.scss */
+/* line 76, src/_alerts.scss */
 #fc .fc-alert p:last-child {
   margin-bottom: 0px;
 }
 
-/* line 83, src/_alerts.scss */
+/* line 81, src/_alerts.scss */
 #fc .fc-alert h2 {
   font-size: 1.3125em;
   margin: 0;
   padding: 0;
 }
 
-/* line 89, src/_alerts.scss */
+/* line 87, src/_alerts.scss */
 #fc .fc-alert ul {
   padding: 0;
   margin-left: 15px;
 }
 
-/* line 94, src/_alerts.scss */
+/* line 92, src/_alerts.scss */
 #fc .fc-alert .fc-list--inline {
   width: 100%;
   margin-left: 0;
   display: inline-block;
 }
 
-/* line 100, src/_alerts.scss */
+/* line 98, src/_alerts.scss */
 #fc .fc-alert .fc-spinner {
   width: 40px;
   float: left;
@@ -13598,7 +13610,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   margin-left: 20px;
 }
 
-/* line 108, src/_alerts.scss */
+/* line 106, src/_alerts.scss */
 #fc .fc-payment-method--plastic__saved .fc-alert {
   margin-left: -23px;
   margin-right: -10px;
@@ -13608,7 +13620,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   padding-bottom: 12px;
 }
 
-/* line 117, src/_alerts.scss */
+/* line 115, src/_alerts.scss */
 #fc .fc-alert--success {
   color: #3e5300;
   background-color: #a3d55e;
@@ -13619,19 +13631,20 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 @media (min-width: 768px) {
-  /* line 125, src/_alerts.scss */
+  /* line 123, src/_alerts.scss */
   #fc .fc-alert--success.fc-with-animation {
     animation: scaleUpAndFadeIn 0.2s ease-in 0s 1;
   }
 }
 
-/* line 132, src/_alerts.scss */
+/* line 129, src/_alerts.scss */
 #fc .fc-alert--success h2 {
   color: #a3d55e;
 }
 
-/* line 134, src/_alerts.scss */
-#fc .fc-alert--success .alert-more, #fc .fc-alert--success a {
+/* line 133, src/_alerts.scss */
+#fc .fc-alert--success .alert-more,
+#fc .fc-alert--success a {
   color: #3e5300;
 }
 
@@ -13675,7 +13688,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   float: left;
 }
 
-/* line 167, src/_alerts.scss */
+/* line 166, src/_alerts.scss */
 #fc .fc-alert--danger {
   background-color: #dc3545;
   border: 2px solid #dc3545;
@@ -13683,35 +13696,35 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 @media (min-width: 768px) {
-  /* line 167, src/_alerts.scss */
+  /* line 166, src/_alerts.scss */
   #fc .fc-alert--danger {
     animation: scaleUp 0.2s ease-in 0s 1;
   }
 }
 
-/* line 175, src/_alerts.scss */
+/* line 174, src/_alerts.scss */
 #fc .fc-alert--danger h2 {
   color: #dc3545;
 }
 
-/* line 176, src/_alerts.scss */
+/* line 177, src/_alerts.scss */
 #fc .fc-alert--danger span {
   color: #dc3545;
   font-weight: bold;
 }
 
-/* line 181, src/_alerts.scss */
+/* line 182, src/_alerts.scss */
 #fc .fc-alert--danger .fc-alert--more {
   color: #dc3545;
   margin-top: 0;
 }
 
-/* line 186, src/_alerts.scss */
+/* line 187, src/_alerts.scss */
 #fc .fc-alert--danger .fc-spinner > div {
   background-color: #dc3545;
 }
 
-/* line 190, src/_alerts.scss */
+/* line 191, src/_alerts.scss */
 #fc .fc-alert--danger .fc-button-link {
   border: 0px;
   color: #ffffff;
@@ -13719,7 +13732,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   padding: 0px;
 }
 
-/* line 199, src/_alerts.scss */
+/* line 200, src/_alerts.scss */
 #fc [data-fc-id='shipping-results'] .fc-alert--danger {
   margin-left: -15px;
   margin-right: -15px;
@@ -13728,7 +13741,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   clear: both;
 }
 
-/* line 207, src/_alerts.scss */
+/* line 208, src/_alerts.scss */
 #fc .fc-alert--info {
   border: 2px solid #3ba1df;
   color: #3ba1df;
@@ -13736,40 +13749,41 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 @media (min-width: 768px) {
-  /* line 207, src/_alerts.scss */
+  /* line 208, src/_alerts.scss */
   #fc .fc-alert--info {
     animation: scaleUpAndFadeIn 0.2s ease-in;
   }
 }
 
-/* line 215, src/_alerts.scss */
+/* line 216, src/_alerts.scss */
 #fc .fc-alert--info h2 {
   color: #3ba1df;
 }
 
-/* line 217, src/_alerts.scss */
+/* line 220, src/_alerts.scss */
 #fc .fc-alert--info .fc-spinner > div {
   background-color: #3ba1df;
 }
 
-/* line 222, src/_alerts.scss */
+/* line 225, src/_alerts.scss */
 #fc .fc-alert--warning {
   border: 2px solid #ffc107;
   color: #ffc107;
   text-shadow: none;
 }
 
-/* line 227, src/_alerts.scss */
-#fc .fc-alert--warning .alert-more, #fc .fc-alert--warning h2 {
+/* line 230, src/_alerts.scss */
+#fc .fc-alert--warning .alert-more,
+#fc .fc-alert--warning h2 {
   color: #ffc107;
 }
 
-/* line 229, src/_alerts.scss */
+/* line 235, src/_alerts.scss */
 #fc .fc-alert--warning .fc-spinner > div {
   background-color: #ffc107;
 }
 
-/* line 241, src/_alerts.scss */
+/* line 245, src/_alerts.scss */
 #fc .fc-alert-container--success .fc-form-control,
 #fc .fc-alert-container--success .fc-form-control:focus {
   border: 2px solid #a3d55e;
@@ -13777,7 +13791,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   box-shadow: none;
 }
 
-/* line 248, src/_alerts.scss */
+/* line 252, src/_alerts.scss */
 #fc .fc-alert-container--success .fc-alert .fc-form-control,
 #fc .fc-alert-container--success .fc-alert .fc-form-control:focus {
   border: 1px solid #a3d55e;
@@ -13786,28 +13800,28 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   box-shadow: none;
 }
 
-/* line 256, src/_alerts.scss */
+/* line 260, src/_alerts.scss */
 #fc .fc-alert-container--success .fc-alert-container--error .fc-form-control--customer-password,
 #fc .fc-alert-container--success .fc-alert-container--error .fc-form-control--customer-password:focus {
   border: none;
 }
 
-/* line 261, src/_alerts.scss */
+/* line 265, src/_alerts.scss */
 #fc .fc-alert-container--success .fc-alert-container--error .fc-button--sign-in {
   border-bottom-right-radius: 0;
 }
 
-/* line 265, src/_alerts.scss */
+/* line 269, src/_alerts.scss */
 #fc .fc-alert-container--success .fc-alert--success .fc-input-group {
   border-bottom-right-radius: 0;
 }
 
-/* line 268, src/_alerts.scss */
+/* line 272, src/_alerts.scss */
 #fc .fc-alert-container--success .fc-alert--success .fc-input-group + .fc-alert--danger {
   margin-right: 1px;
 }
 
-/* line 273, src/_alerts.scss */
+/* line 277, src/_alerts.scss */
 #fc .fc-alert-container--success .fc-alert--success .fc-input-group button {
   height: 40px;
   margin-bottom: 0;
@@ -13816,33 +13830,33 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   border: 0;
 }
 
-/* line 281, src/_alerts.scss */
+/* line 285, src/_alerts.scss */
 #fc .fc-alert-container--success .fc-alert--success .fc-input-group .fc-button--sign-in {
   height: 39px;
   margin-top: 1px;
 }
 
-/* line 286, src/_alerts.scss */
+/* line 290, src/_alerts.scss */
 #fc .fc-alert-container--success .fc-alert--success {
   border: none;
 }
 
-/* line 291, src/_alerts.scss */
+/* line 295, src/_alerts.scss */
 #fc .fc-alert-container--success .fc-alert--success .fc-form-control--customer-password {
   border-bottom: none;
 }
 
-/* line 298, src/_alerts.scss */
+/* line 301, src/_alerts.scss */
 #fc .fc-alert-container--error label {
   color: #dc3545;
 }
 
-/* line 299, src/_alerts.scss */
+/* line 304, src/_alerts.scss */
 #fc .fc-alert-container--error .fc-input-title {
   color: inherit;
 }
 
-/* line 301, src/_alerts.scss */
+/* line 308, src/_alerts.scss */
 .fc-input-group-container--radio #fc .fc-alert-container--error .fc-form-group input,
 #fc .fc-alert-container--error .fc-input-group,
 #fc .fc-alert-container--error .fc-container__grid--payment-method .fc-input-group-container--active,
@@ -13851,54 +13865,54 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   background: #fae3e5;
   border: 2px solid #dc3545;
   border-radius: 5px;
-  transition: background 0.2s linear, border 0.2s linear;
+  transition: unset;
 }
 
-/* line 311, src/_alerts.scss */
+/* line 318, src/_alerts.scss */
 .fc-input-group-container--radio #fc .fc-alert-container--error .fc-form-group input:focus,
 #fc .fc-alert-container--error .fc-input-group:focus,
 #fc .fc-alert-container--error .fc-container__grid--payment-method .fc-input-group-container--active:focus,
 #fc .fc-alert-container--error .fc-input-group-container--checkbox:focus,
 #fc .fc-alert-container--error .fc-input-group-container--active:focus {
   background: #ffffff;
-  transition: background 0.2s linear;
+  transition: unset;
 }
 
-/* line 317, src/_alerts.scss */
+/* line 324, src/_alerts.scss */
 #fc .fc-alert-container--error .fc-form-control,
 #fc .fc-alert-container--error .fc-form-control:focus {
   padding-left: 10px;
   background: #fae3e5;
   border: 2px solid #dc3545;
-  transition: background 0.2s linear, border 0.2s linear, padding 0.2s linear;
+  transition: unset;
 }
 
-/* line 324, src/_alerts.scss */
+/* line 332, src/_alerts.scss */
 #fc .fc-alert-container--error .fc-form-control:focus,
 #fc .fc-alert-container--error .fc-form-control:focus:focus {
   background: #ffffff;
-  transition: background 0.2s linear;
+  transition: unset;
 }
 
-/* line 331, src/_alerts.scss */
+/* line 338, src/_alerts.scss */
 #fc .fc-alert-container--error .fc-button {
   border: 2px solid #dc3545;
   border-left: none;
   line-height: 1.9;
-  transition: border 0.2s linear;
+  transition: unset;
 }
 
-/* line 337, src/_alerts.scss */
+/* line 344, src/_alerts.scss */
 #fc .fc-alert-container--error .fc-button:hover {
   border-color: #dc3545;
 }
 
-/* line 341, src/_alerts.scss */
+/* line 348, src/_alerts.scss */
 #fc .fc-alert-container--error .fc-button.fc-button-link {
   border: none;
 }
 
-/* line 346, src/_alerts.scss */
+/* line 353, src/_alerts.scss */
 #fc .fc-alert-container--error .fc-input-group-container--active .fc-input-group-container__title:before,
 #fc .fc-alert-container--error .fc-input-group-container--active .fc-input-group-container__no-title:before,
 #fc .fc-alert-container--error .fc-input-group-container--checkbox .fc-input-group-container__title:before {
@@ -13906,11 +13920,11 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   border-color: #dc3545;
   border-style: solid;
   left: -8px;
-  transition: border 0.2s linear;
+  transition: unset;
 }
 
 @media (min-width: 768px) {
-  /* line 346, src/_alerts.scss */
+  /* line 353, src/_alerts.scss */
   #fc .fc-alert-container--error .fc-input-group-container--active .fc-input-group-container__title:before,
   #fc .fc-alert-container--error .fc-input-group-container--active .fc-input-group-container__no-title:before,
   #fc .fc-alert-container--error .fc-input-group-container--checkbox .fc-input-group-container__title:before {
@@ -13918,30 +13932,30 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   }
 }
 
-/* line 358, src/_alerts.scss */
+/* line 367, src/_alerts.scss */
 #fc .fc-alert-container--error .fc-alert--danger {
   display: block;
-  border-radius: 0px 0px 5px 5px;
-  opacity: 1.0;
+  border-radius: unset;
+  opacity: 1;
 }
 
-/* line 364, src/_alerts.scss */
+/* line 373, src/_alerts.scss */
 #fc .fc-alert-container--error .fc-alert .fc-form-control {
   border: none;
 }
 
-/* line 368, src/_alerts.scss */
+/* line 377, src/_alerts.scss */
 #fc .fc-alert-container--error .fc-alert-container--success .fc-form-control {
   border: none;
 }
 
-/* line 372, src/_alerts.scss */
+/* line 382, src/_alerts.scss */
 #fc .fc-alert-container--error .fc-payment-method--plastic__new .fc-alert-container--error .fc-form-control {
   border: 2px solid #dc3545;
-  transition: background 0.2s linear, border 0.2s linear;
+  transition: unset;
 }
 
-/* line 377, src/_alerts.scss */
+/* line 389, src/_alerts.scss */
 #fc .fc-alert-container--error .fc-input-group--full-page {
   border: 2px solid #dc3545;
   border-radius: 5px;
@@ -13949,33 +13963,33 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 @media (min-width: 768px) {
-  /* line 377, src/_alerts.scss */
+  /* line 389, src/_alerts.scss */
   #fc .fc-alert-container--error .fc-input-group--full-page {
     animation: fadeInErrorBorder 0.2s linear 0s 1;
   }
 }
 
-/* line 389, src/_alerts.scss */
+/* line 400, src/_alerts.scss */
 #fc .fc-alert-container--info .fc-form-control {
   border: 2px solid #e5f1fa;
   border-bottom: none;
 }
 
 @media (min-width: 768px) {
-  /* line 389, src/_alerts.scss */
+  /* line 400, src/_alerts.scss */
   #fc .fc-alert-container--info .fc-form-control {
     animation: fadeInInfoBorder 0.1s linear;
   }
 }
 
-/* line 397, src/_alerts.scss */
+/* line 408, src/_alerts.scss */
 #fc .fc-alert-container--info .fc-alert .fc-form-control,
 #fc .fc-alert-container--info .fc-alert .fc-input-group {
   border: 2px solid #e5f1fa;
   border-bottom: none;
 }
 
-/* line 403, src/_alerts.scss */
+/* line 414, src/_alerts.scss */
 #fc .fc-alert-container--info .fc-alert {
   border-radius: 0px 0px 5px 5px;
   border: 2px solid #e5f1fa;
@@ -13994,56 +14008,59 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 @media (min-width: 768px) {
-  /* line 403, src/_alerts.scss */
+  /* line 414, src/_alerts.scss */
   #fc .fc-alert-container--info .fc-alert {
     animation: fadeInInfoBorder 0.1s linear;
   }
 }
 
-/* line 412, src/_alerts.scss */
+/* line 423, src/_alerts.scss */
 #fc .fc-alert-container--info .fc-alert p {
   float: left;
   margin-bottom: 0;
 }
 
-/* line 418, src/_alerts.scss */
+/* line 429, src/_alerts.scss */
 #fc .fc-alert-container--info .fc-button {
   border: 2px solid #e5f1fa;
   border-bottom: none;
   border-left: none;
   line-height: 1.9em;
   height: 39px;
-  transition: border 0.2s linear;
+  transition: unset;
 }
 
-/* line 426, src/_alerts.scss */
+/* line 437, src/_alerts.scss */
 #fc .fc-alert-container--info .fc-button:hover {
   border-color: #e5f1fa;
 }
 
 /* line 8, src/_sidecart.scss */
-#fc header, #fc section, #fc div, [data-fc-sidecart], [data-fc-sidecart] .fc-sidecart-only-fixed, [data-fc-store-page], [data-fc-ui-block] {
+#fc header,
+#fc section,
+#fc div, [data-fc-sidecart], [data-fc-sidecart] .fc-sidecart-only-fixed, [data-fc-store-page], [data-fc-ui-block] {
   margin: 0;
   padding: 0;
   border: none;
 }
 
 /* line 14, src/_sidecart.scss */
-html, body.cart-visible--reset {
+html,
+body.cart-visible--reset {
   height: 100%;
   z-index: 1;
 }
 
-/* line 19, src/_sidecart.scss */
+/* line 20, src/_sidecart.scss */
 span.fc-skeleton {
   background: #000;
   color: #000;
   text-shadow: none;
   display: inline-block;
-  opacity: .125;
+  opacity: 0.125;
 }
 
-/* line 34, src/_sidecart.scss */
+/* line 37, src/_sidecart.scss */
 [data-fc-sidecart] {
   -webkit-overflow-scrolling: touch;
   position: absolute;
@@ -14054,39 +14071,39 @@ span.fc-skeleton {
   background: #e4e4e4;
 }
 
-/* line 46, src/_sidecart.scss */
+/* line 49, src/_sidecart.scss */
 [data-fc-sidecart] #fc {
   position: relative;
 }
 
-/* line 49, src/_sidecart.scss */
+/* line 52, src/_sidecart.scss */
 [data-fc-sidecart] #fc .fc-sidebar--cart {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
 
-/* line 55, src/_sidecart.scss */
+/* line 58, src/_sidecart.scss */
 [data-fc-sidecart] #fc #fc-cart--fixed-width .fc-cart__item__image {
   width: 34%;
   margin-left: -5%;
 }
 
-/* line 66, src/_sidecart.scss */
+/* line 69, src/_sidecart.scss */
 [data-fc-sidecart] #fc #fc-cart--fixed-width .fc-cart__item__details {
   width: 71%;
 }
 
-/* line 71, src/_sidecart.scss */
+/* line 74, src/_sidecart.scss */
 [data-fc-sidecart] #fc .fa-caret-right {
   fill: #ffffff;
 }
 
-/* line 75, src/_sidecart.scss */
+/* line 78, src/_sidecart.scss */
 [data-fc-sidecart] #fc .fa-caret-left {
   fill: #333;
 }
 
-/* line 79, src/_sidecart.scss */
+/* line 82, src/_sidecart.scss */
 [data-fc-sidecart] #fc .fc-fixed-button-left .fc-svg-icon,
 [data-fc-sidecart] #fc .fc-fixed-button-right .fc-svg-icon {
   top: 0px;
@@ -14094,19 +14111,19 @@ span.fc-skeleton {
   height: 8px;
 }
 
-/* line 85, src/_sidecart.scss */
+/* line 88, src/_sidecart.scss */
 [data-fc-sidecart] #fc .fc-fixed-button-left .fc-svg-icon {
   margin-right: 3px;
 }
 
-/* line 88, src/_sidecart.scss */
+/* line 91, src/_sidecart.scss */
 [data-fc-sidecart] #fc .fc-fixed-button-right .fc-btn-action {
   background-color: #28a745;
   color: #ffffff;
   background: linear-gradient(to bottom, #73b263 0%, #458c33 100%);
 }
 
-/* line 94, src/_sidecart.scss */
+/* line 99, src/_sidecart.scss */
 [data-fc-sidecart] #fc-cart {
   margin-top: 0;
   margin-bottom: 0;
@@ -14114,12 +14131,12 @@ span.fc-skeleton {
   background-color: #e4e4e4;
 }
 
-/* line 100, src/_sidecart.scss */
+/* line 105, src/_sidecart.scss */
 [data-fc-sidecart] #fc-cart.fc-container {
   width: inherit;
 }
 
-/* line 104, src/_sidecart.scss */
+/* line 109, src/_sidecart.scss */
 [data-fc-sidecart] .fc-sidecart-only-fixed {
   display: block;
   position: fixed;
@@ -14129,30 +14146,30 @@ span.fc-skeleton {
   width: 280px;
 }
 
-/* line 115, src/_sidecart.scss */
+/* line 120, src/_sidecart.scss */
 [data-fc-sidecart] .fc-fixed-button-right {
   width: 80%;
   float: left;
 }
 
-/* line 119, src/_sidecart.scss */
+/* line 124, src/_sidecart.scss */
 [data-fc-sidecart] .fc-fixed-button-left {
   width: 20%;
   float: left;
 }
 
-/* line 123, src/_sidecart.scss */
+/* line 128, src/_sidecart.scss */
 [data-fc-sidecart] .fc-fixed-button-left .fc-fixed-button-left--text {
   display: none;
 }
 
-/* line 128, src/_sidecart.scss */
+/* line 133, src/_sidecart.scss */
 [data-fc-sidecart] #fc .fc-cart-item-image {
   margin-left: -5%;
 }
 
 @media (max-width: 767px) {
-  /* line 134, src/_sidecart.scss */
+  /* line 139, src/_sidecart.scss */
   [data-fc-sidecart] #fc .fc-cart__header,
   [data-fc-sidecart] #fc .fc-cart-container {
     margin-left: -7px;
@@ -14160,14 +14177,14 @@ span.fc-skeleton {
   }
 }
 
-/* line 142, src/_sidecart.scss */
+/* line 147, src/_sidecart.scss */
 [data-fc-with-sidecart] {
   transition-property: transform, opacity;
   transition-duration: 0.4s;
   transition-timing-function: ease-in-out;
 }
 
-/* line 150, src/_sidecart.scss */
+/* line 154, src/_sidecart.scss */
 [data-fc-store-page] {
   transition-property: transform, opacity;
   transition-duration: 0.4s;
@@ -14180,7 +14197,7 @@ span.fc-skeleton {
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 181, src/_sidecart.scss */
+/* line 182, src/_sidecart.scss */
 [data-fc-ui-block] {
   transition: transform 0.4s ease-in-out 0s, opacity 0.4s ease-in-out 0s, width 0s linear 0.4s, height 0s linear 0.4s;
   transform-origin: 100% 50%;
@@ -14193,19 +14210,19 @@ span.fc-skeleton {
   background-color: #000;
 }
 
-/* line 200, src/_sidecart.scss */
+/* line 202, src/_sidecart.scss */
 [data-fc-with-sidecart].cart-visible {
   transition-duration: 0.5s;
 }
 
-/* line 204, src/_sidecart.scss */
+/* line 206, src/_sidecart.scss */
 [data-fc-with-sidecart].cart-visible [data-fc-store-page] {
   transform-style: preserve-3d;
   transition-duration: 0.5s;
   overflow: hidden;
 }
 
-/* line 210, src/_sidecart.scss */
+/* line 212, src/_sidecart.scss */
 [data-fc-with-sidecart].cart-visible [data-fc-ui-block] {
   transform-style: preserve-3d;
   transition: transform 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0s, width 0s linear 0s, height 0s linear 0s;
@@ -14218,80 +14235,80 @@ span.fc-skeleton {
   right: 0;
   left: 0;
   cursor: pointer;
-  opacity: .2;
+  opacity: 0.2;
 }
 
-/* line 232, src/_sidecart.scss */
-[data-fc-with-sidecart="rotate-pusher"] {
+/* line 233, src/_sidecart.scss */
+[data-fc-with-sidecart='rotate-pusher'] {
   perspective: 2000px;
   transform: translate3d(-280px, 0, 0);
   transform: translateZ(0);
 }
 
-/* line 237, src/_sidecart.scss */
-[data-fc-with-sidecart="rotate-pusher"] [data-fc-sidecart] {
+/* line 238, src/_sidecart.scss */
+[data-fc-with-sidecart='rotate-pusher'] [data-fc-sidecart] {
   top: 0;
   left: 100%;
   z-index: -10;
 }
 
-/* line 243, src/_sidecart.scss */
-[data-fc-with-sidecart="rotate-pusher"].cart-visible {
+/* line 244, src/_sidecart.scss */
+[data-fc-with-sidecart='rotate-pusher'].cart-visible {
   transform: translate3d(-280px, 0, 0);
 }
 
-/* line 246, src/_sidecart.scss */
-[data-fc-with-sidecart="rotate-pusher"].cart-visible [data-fc-store-page] {
+/* line 247, src/_sidecart.scss */
+[data-fc-with-sidecart='rotate-pusher'].cart-visible [data-fc-store-page] {
   transition-duration: 0.5s;
 }
 
-/* line 249, src/_sidecart.scss */
-[data-fc-with-sidecart="rotate-pusher"].cart-visible [data-fc-store-page],
-[data-fc-with-sidecart="rotate-pusher"].cart-visible [data-fc-ui-block] {
+/* line 250, src/_sidecart.scss */
+[data-fc-with-sidecart='rotate-pusher'].cart-visible [data-fc-store-page],
+[data-fc-with-sidecart='rotate-pusher'].cart-visible [data-fc-ui-block] {
   transform: translate3d(0, 0, 0) rotateY(15deg);
 }
 
-/* line 254, src/_sidecart.scss */
-[data-fc-with-sidecart="rotate-pusher"].cart-visible [data-fc-sidecart] {
+/* line 255, src/_sidecart.scss */
+[data-fc-with-sidecart='rotate-pusher'].cart-visible [data-fc-sidecart] {
   z-index: 2500;
 }
 
-/* line 261, src/_sidecart.scss */
-[data-fc-with-sidecart="reveal"] [data-fc-sidecart] {
+/* line 262, src/_sidecart.scss */
+[data-fc-with-sidecart='reveal'] [data-fc-sidecart] {
   z-index: -10;
   top: 0;
   right: 0;
 }
 
-/* line 266, src/_sidecart.scss */
-[data-fc-with-sidecart="reveal"] [data-fc-store-page],
-[data-fc-with-sidecart="reveal"] [data-fc-ui-block] {
+/* line 267, src/_sidecart.scss */
+[data-fc-with-sidecart='reveal'] [data-fc-store-page],
+[data-fc-with-sidecart='reveal'] [data-fc-ui-block] {
   transform: translate3d(-280px, 0, 0);
   transform: translateZ(0);
 }
 
-/* line 273, src/_sidecart.scss */
-[data-fc-with-sidecart="reveal"].cart-visible [data-fc-store-page],
-[data-fc-with-sidecart="reveal"].cart-visible [data-fc-ui-block] {
+/* line 274, src/_sidecart.scss */
+[data-fc-with-sidecart='reveal'].cart-visible [data-fc-store-page],
+[data-fc-with-sidecart='reveal'].cart-visible [data-fc-ui-block] {
   transform: translate3d(-280px, 0, 0);
 }
 
-/* line 279, src/_sidecart.scss */
-[data-fc-with-sidecart="reveal"].cart-visible--animation-complete [data-fc-sidecart] {
+/* line 280, src/_sidecart.scss */
+[data-fc-with-sidecart='reveal'].cart-visible--animation-complete [data-fc-sidecart] {
   z-index: 100;
 }
 
-/* line 284, src/_sidecart.scss */
-[data-fc-with-sidecart="reveal"] [data-fc-store-page] {
+/* line 285, src/_sidecart.scss */
+[data-fc-with-sidecart='reveal'] [data-fc-store-page] {
   z-index: 2;
 }
 
-/* line 292, src/_sidecart.scss */
+/* line 293, src/_sidecart.scss */
 body.logged-in.admin-bar div[data-fc-store-page] {
   padding-top: 32px;
 }
 
-/* line 295, src/_sidecart.scss */
+/* line 296, src/_sidecart.scss */
 body.logged-in.admin-bar {
   margin-top: -32px;
 }
@@ -14327,12 +14344,12 @@ body.logged-in.admin-bar {
     width: 310px;
   }
   /* line 328, src/_sidecart.scss */
-  [data-fc-with-sidecart="rotate-pusher"].cart-visible {
+  [data-fc-with-sidecart='rotate-pusher'].cart-visible {
     transform: translate3d(-310px, 0, 0);
   }
   /* line 332, src/_sidecart.scss */
-  [data-fc-with-sidecart="reveal"].cart-visible [data-fc-store-page],
-  [data-fc-with-sidecart="reveal"].cart-visible [data-fc-ui-block] {
+  [data-fc-with-sidecart='reveal'].cart-visible [data-fc-store-page],
+  [data-fc-with-sidecart='reveal'].cart-visible [data-fc-ui-block] {
     transform: translate3d(-310px, 0, 0);
   }
 }
@@ -14368,12 +14385,12 @@ body.logged-in.admin-bar {
     width: 340px;
   }
   /* line 328, src/_sidecart.scss */
-  [data-fc-with-sidecart="rotate-pusher"].cart-visible {
+  [data-fc-with-sidecart='rotate-pusher'].cart-visible {
     transform: translate3d(-340px, 0, 0);
   }
   /* line 332, src/_sidecart.scss */
-  [data-fc-with-sidecart="reveal"].cart-visible [data-fc-store-page],
-  [data-fc-with-sidecart="reveal"].cart-visible [data-fc-ui-block] {
+  [data-fc-with-sidecart='reveal'].cart-visible [data-fc-store-page],
+  [data-fc-with-sidecart='reveal'].cart-visible [data-fc-ui-block] {
     transform: translate3d(-340px, 0, 0);
   }
 }

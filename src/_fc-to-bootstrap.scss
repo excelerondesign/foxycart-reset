@@ -279,6 +279,7 @@
 .fc-checkout__main__form,
 .fc-address-entry {
 	@extend .form-horizontal;
+	padding-top: 0;
 }
 
 .fc-coupon-entry--input {
