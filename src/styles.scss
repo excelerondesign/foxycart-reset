@@ -49,6 +49,14 @@
 	font-display: swap;
 	src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff');
 }
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation: unset !important;
+		transition: none !important;
+	}
+}
+
 @import 'bourbon';
 @import 'variables';
 
