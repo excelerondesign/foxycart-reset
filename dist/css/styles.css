@@ -2442,7 +2442,7 @@
 #fc .fc-receipt__section--multiship-shipping-information, #fc .col-md-6, #fc .fc-form-label__plastic-saved-expiration,
 #fc .fc-form-label--cvv2-saved, #fc .col-lg-6, #fc .col-xs-7, #fc .fc-container--postal-code-actions--search .fc-container__grid--postal-code-actions, #fc .col-sm-7, #fc .fc-cart__items--without-images .fc-cart__items__header__item, #fc .fc-cart__item__details-and-image, #fc .fc-container__static--pos-masked-number,
 #fc .fc-container__static--pos-expiration, #fc .col-md-7, #fc .col-lg-7, #fc .col-xs-8, #fc #fc-cart--fixed-width .fc-cart__items--with-images .fc-cart__item__details, #fc .fc-cart__items--with-images .fc-cart__items__header__item, #fc .fc-container__grid--postal-code-actions, #fc .fc-postal-code-entry__without-search .fc-container__grid--country, #fc .fc-container__grid--input--po, #fc .fc-container__grid--input--address1,
-#fc .fc-container__grid--input--multiship-select, #fc .fc-pos-modal--header__value, #fc #fc-receipt-container fieldset .fc-form-group div[class*="fc-container__grid--static-input"], #fc .col-sm-8, #fc #fc-cart--responsive .fc-cart__title, #fc #fc-cart--responsive .fc-cart__main__content, #fc .fc-container__grid--use-different-address, #fc .fc-checkout__main__contents, #fc .fc-container__grid--input--customer-email,
+#fc .fc-container__grid--input--multiship-select, #fc .fc-pos-modal--header__value, #fc #fc-receipt-container fieldset .fc-form-group div[class*='fc-container__grid--static-input'], #fc .col-sm-8, #fc #fc-cart--responsive .fc-cart__title, #fc #fc-cart--responsive .fc-cart__main__content, #fc .fc-container__grid--use-different-address, #fc .fc-checkout__main__contents, #fc .fc-container__grid--input--customer-email,
 #fc .fc-container__grid--authentication-button--amazon, #fc .fc-form-label__plastic-saved-expiration,
 #fc .fc-form-label--cvv2-saved, #fc .fc-container__grid--input--company,
 #fc .fc-container__grid--input--tax-id, #fc .fc-container-checkout__grid--postal-code, #fc .col-md-8, #fc .fc-checkout__main__contents, #fc .fc-container__grid--payment-method,
@@ -2470,7 +2470,7 @@
 #fc .fc-container__grid--input--last-name,
 #fc .fc-form-group--multiple-inline .fc-container__grid--input--company,
 #fc .fc-container__grid--input--phone, #fc #fc-receipt__section--header .fc-container__grid--receipt--logo, #fc #fc-receipt__section--header .fc-container__grid--receipt--transaction-subject, #fc .col-xs-7, #fc .fc-container--postal-code-actions--search .fc-container__grid--postal-code-actions, #fc .col-xs-8, #fc #fc-cart--fixed-width .fc-cart__items--with-images .fc-cart__item__details, #fc .fc-cart__items--with-images .fc-cart__items__header__item, #fc .fc-container__grid--postal-code-actions, #fc .fc-postal-code-entry__without-search .fc-container__grid--country, #fc .fc-container__grid--input--po, #fc .fc-container__grid--input--address1,
-#fc .fc-container__grid--input--multiship-select, #fc .fc-pos-modal--header__value, #fc #fc-receipt-container fieldset .fc-form-group div[class*="fc-container__grid--static-input"], #fc .col-xs-9, #fc #fc-cart--responsive .fc-cart__items--with-images .fc-cart__item__details, #fc .fc-cart__items--without-images .fc-cart__items__header__item, #fc .fc-form-label__plastic-saved-expiration,
+#fc .fc-container__grid--input--multiship-select, #fc .fc-pos-modal--header__value, #fc #fc-receipt-container fieldset .fc-form-group div[class*='fc-container__grid--static-input'], #fc .col-xs-9, #fc #fc-cart--responsive .fc-cart__items--with-images .fc-cart__item__details, #fc .fc-cart__items--without-images .fc-cart__items__header__item, #fc .fc-form-label__plastic-saved-expiration,
 #fc .fc-form-label--cvv2-saved, #fc .fc-form-label--new-cc-exp-month, #fc .col-xs-10, #fc .fc-cart__item__details-and-image, #fc .fc-container__grid--postal-code-errors, #fc .col-xs-11, #fc .fc-form-label__pos-masked-number,
 #fc .fc-form-label__pos-expiration, #fc .fc-container__static--pos-masked-number,
 #fc .fc-container__static--pos-expiration, #fc .fc-container__grid--input--plastic-new-card-number, #fc .col-xs-12, #fc #fc-cart--responsive .fc-cart__items--without-images .fc-cart__item__details, #fc #fc-cart--fixed-width .fc-cart__title, #fc #fc-cart--fixed-width .fc-cancel-continue-shopping, #fc #fc-cart--fixed-width .fc-cart__main__content, #fc #fc-cart--fixed-width .fc-sidebar--cart, #fc #fc-cart--fixed-width .fc-cart__items--without-images .fc-cart__item__details, #fc .fc-checkout__main .fc-sidebar--checkout, #fc .fc-checkout__main__contents, #fc .fc-postal-code-entry__with-search .fc-container__grid--country, #fc .fc-container__grid--input--company,
@@ -2512,7 +2512,7 @@
 }
 
 #fc .col-xs-8, #fc #fc-cart--fixed-width .fc-cart__items--with-images .fc-cart__item__details, #fc .fc-cart__items--with-images .fc-cart__items__header__item, #fc .fc-container__grid--postal-code-actions, #fc .fc-postal-code-entry__without-search .fc-container__grid--country, #fc .fc-container__grid--input--po, #fc .fc-container__grid--input--address1,
-#fc .fc-container__grid--input--multiship-select, #fc .fc-pos-modal--header__value, #fc #fc-receipt-container fieldset .fc-form-group div[class*="fc-container__grid--static-input"] {
+#fc .fc-container__grid--input--multiship-select, #fc .fc-pos-modal--header__value, #fc #fc-receipt-container fieldset .fc-form-group div[class*='fc-container__grid--static-input'] {
   width: 66.66667%;
 }
 
@@ -3872,7 +3872,7 @@ fieldset[disabled]
 }
 
 #fc .form-control-static, #fc .fc-container__static--plastic-saved-expiration .fc-form-control--static, #fc .fc-container__static--pos-masked-number .fc-form-control--static,
-#fc .fc-container__static--pos-expiration .fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group div[class*="fc-container__grid--static-input"] {
+#fc .fc-container__static--pos-expiration .fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group div[class*='fc-container__grid--static-input'] {
   min-height: 34px;
   padding-top: 7px;
   padding-bottom: 7px;
@@ -3880,43 +3880,43 @@ fieldset[disabled]
 }
 
 #fc .form-control-static.input-lg, #fc .input-group-lg > .form-control-static.form-control, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .form-control.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .form-control.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-group-lg > .form-control.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > div.form-control[class*="fc-container__grid--static-input"],
+#fc .fc-container__static--pos-expiration .input-group-lg > .form-control.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > div.form-control[class*='fc-container__grid--static-input'],
 #fc .input-group-lg > .form-control-static.input-group-addon, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .input-group-addon.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .input-group-addon.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-group-lg > .input-group-addon.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > div.input-group-addon[class*="fc-container__grid--static-input"],
+#fc .fc-container__static--pos-expiration .input-group-lg > .input-group-addon.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > div.input-group-addon[class*='fc-container__grid--static-input'],
 #fc .input-group-lg > .input-group-btn > .form-control-static.btn,
 #fc .input-group-lg > .fc-input-group__button > .form-control-static.btn, #fc .input-group-lg > .input-group-btn > .form-control-static.fc-button, #fc .input-group-lg > .fc-input-group__button > .form-control-static.fc-button, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .input-group-btn > .fc-button.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .fc-input-group__button > .fc-button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .input-group-btn > .fc-button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .fc-input-group__button > .fc-button.fc-form-control--static,
 #fc .fc-container__static--pos-expiration .input-group-lg > .input-group-btn > .fc-button.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-group-lg > .fc-input-group__button > .fc-button.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .input-group-btn > div.fc-button[class*="fc-container__grid--static-input"], #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .fc-input-group__button > div.fc-button[class*="fc-container__grid--static-input"], #fc .input-group-lg > .input-group-btn > .form-control-static.fc-button--minor, #fc .input-group-lg > .fc-input-group__button > .form-control-static.fc-button--minor, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .input-group-btn > .fc-button--minor.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .fc-input-group__button > .fc-button--minor.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .input-group-btn > .fc-button--minor.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .fc-input-group__button > .fc-button--minor.fc-form-control--static,
+#fc .fc-container__static--pos-expiration .input-group-lg > .fc-input-group__button > .fc-button.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .input-group-btn > div.fc-button[class*='fc-container__grid--static-input'], #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .fc-input-group__button > div.fc-button[class*='fc-container__grid--static-input'], #fc .input-group-lg > .input-group-btn > .form-control-static.fc-button--minor, #fc .input-group-lg > .fc-input-group__button > .form-control-static.fc-button--minor, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .input-group-btn > .fc-button--minor.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .fc-input-group__button > .fc-button--minor.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .input-group-btn > .fc-button--minor.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .fc-input-group__button > .fc-button--minor.fc-form-control--static,
 #fc .fc-container__static--pos-expiration .input-group-lg > .input-group-btn > .fc-button--minor.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-group-lg > .fc-input-group__button > .fc-button--minor.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .input-group-btn > div.fc-button--minor[class*="fc-container__grid--static-input"], #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .fc-input-group__button > div.fc-button--minor[class*="fc-container__grid--static-input"], #fc .input-group-lg > .input-group-btn > .form-control-static.fc-sidecart-button, #fc .input-group-lg > .fc-input-group__button > .form-control-static.fc-sidecart-button, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .input-group-btn > .fc-sidecart-button.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .fc-input-group__button > .fc-sidecart-button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .input-group-btn > .fc-sidecart-button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .fc-input-group__button > .fc-sidecart-button.fc-form-control--static,
+#fc .fc-container__static--pos-expiration .input-group-lg > .fc-input-group__button > .fc-button--minor.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .input-group-btn > div.fc-button--minor[class*='fc-container__grid--static-input'], #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .fc-input-group__button > div.fc-button--minor[class*='fc-container__grid--static-input'], #fc .input-group-lg > .input-group-btn > .form-control-static.fc-sidecart-button, #fc .input-group-lg > .fc-input-group__button > .form-control-static.fc-sidecart-button, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .input-group-btn > .fc-sidecart-button.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .fc-input-group__button > .fc-sidecart-button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .input-group-btn > .fc-sidecart-button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .fc-input-group__button > .fc-sidecart-button.fc-form-control--static,
 #fc .fc-container__static--pos-expiration .input-group-lg > .input-group-btn > .fc-sidecart-button.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-group-lg > .fc-input-group__button > .fc-sidecart-button.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .input-group-btn > div.fc-sidecart-button[class*="fc-container__grid--static-input"], #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .fc-input-group__button > div.fc-sidecart-button[class*="fc-container__grid--static-input"], #fc .input-group-lg > .input-group-btn > .form-control-static.fc-action--checkout--button, #fc .input-group-lg > .fc-input-group__button > .form-control-static.fc-action--checkout--button, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .input-group-btn > .fc-action--checkout--button.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .fc-input-group__button > .fc-action--checkout--button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .input-group-btn > .fc-action--checkout--button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .fc-input-group__button > .fc-action--checkout--button.fc-form-control--static,
+#fc .fc-container__static--pos-expiration .input-group-lg > .fc-input-group__button > .fc-sidecart-button.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .input-group-btn > div.fc-sidecart-button[class*='fc-container__grid--static-input'], #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .fc-input-group__button > div.fc-sidecart-button[class*='fc-container__grid--static-input'], #fc .input-group-lg > .input-group-btn > .form-control-static.fc-action--checkout--button, #fc .input-group-lg > .fc-input-group__button > .form-control-static.fc-action--checkout--button, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .input-group-btn > .fc-action--checkout--button.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .fc-input-group__button > .fc-action--checkout--button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .input-group-btn > .fc-action--checkout--button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .fc-input-group__button > .fc-action--checkout--button.fc-form-control--static,
 #fc .fc-container__static--pos-expiration .input-group-lg > .input-group-btn > .fc-action--checkout--button.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-group-lg > .fc-input-group__button > .fc-action--checkout--button.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .input-group-btn > div.fc-action--checkout--button[class*="fc-container__grid--static-input"], #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .fc-input-group__button > div.fc-action--checkout--button[class*="fc-container__grid--static-input"], #fc .input-group-lg > .input-group-btn > .form-control-static.fc-button-link, #fc .input-group-lg > .fc-input-group__button > .form-control-static.fc-button-link, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .input-group-btn > .fc-button-link.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .fc-input-group__button > .fc-button-link.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .input-group-btn > .fc-button-link.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .fc-input-group__button > .fc-button-link.fc-form-control--static,
+#fc .fc-container__static--pos-expiration .input-group-lg > .fc-input-group__button > .fc-action--checkout--button.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .input-group-btn > div.fc-action--checkout--button[class*='fc-container__grid--static-input'], #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .fc-input-group__button > div.fc-action--checkout--button[class*='fc-container__grid--static-input'], #fc .input-group-lg > .input-group-btn > .form-control-static.fc-button-link, #fc .input-group-lg > .fc-input-group__button > .form-control-static.fc-button-link, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .input-group-btn > .fc-button-link.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .fc-input-group__button > .fc-button-link.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .input-group-btn > .fc-button-link.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .fc-input-group__button > .fc-button-link.fc-form-control--static,
 #fc .fc-container__static--pos-expiration .input-group-lg > .input-group-btn > .fc-button-link.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-group-lg > .fc-input-group__button > .fc-button-link.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .input-group-btn > div.fc-button-link[class*="fc-container__grid--static-input"], #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .fc-input-group__button > div.fc-button-link[class*="fc-container__grid--static-input"], #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .input-group-btn > .btn.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .fc-input-group__button > .btn.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .input-group-btn > .btn.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .fc-input-group__button > .btn.fc-form-control--static,
+#fc .fc-container__static--pos-expiration .input-group-lg > .fc-input-group__button > .fc-button-link.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .input-group-btn > div.fc-button-link[class*='fc-container__grid--static-input'], #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .fc-input-group__button > div.fc-button-link[class*='fc-container__grid--static-input'], #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .input-group-btn > .btn.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-lg > .fc-input-group__button > .btn.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .input-group-btn > .btn.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-lg > .fc-input-group__button > .btn.fc-form-control--static,
 #fc .fc-container__static--pos-expiration .input-group-lg > .input-group-btn > .btn.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-group-lg > .fc-input-group__button > .btn.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .input-group-btn > div.btn[class*="fc-container__grid--static-input"], #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .fc-input-group__button > div.btn[class*="fc-container__grid--static-input"], #fc .fc-container__static--plastic-saved-expiration .input-lg.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-lg.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-lg.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group div.input-lg[class*="fc-container__grid--static-input"], #fc .form-control-static.input-sm, #fc .input-group-sm > .form-control-static.form-control, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .form-control.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .form-control.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-group-sm > .form-control.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > div.form-control[class*="fc-container__grid--static-input"],
+#fc .fc-container__static--pos-expiration .input-group-lg > .fc-input-group__button > .btn.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .input-group-btn > div.btn[class*='fc-container__grid--static-input'], #fc #fc-receipt-container fieldset .fc-form-group .input-group-lg > .fc-input-group__button > div.btn[class*='fc-container__grid--static-input'], #fc .fc-container__static--plastic-saved-expiration .input-lg.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-lg.fc-form-control--static,
+#fc .fc-container__static--pos-expiration .input-lg.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group div.input-lg[class*='fc-container__grid--static-input'], #fc .form-control-static.input-sm, #fc .input-group-sm > .form-control-static.form-control, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .form-control.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .form-control.fc-form-control--static,
+#fc .fc-container__static--pos-expiration .input-group-sm > .form-control.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > div.form-control[class*='fc-container__grid--static-input'],
 #fc .input-group-sm > .form-control-static.input-group-addon, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .input-group-addon.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .input-group-addon.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-group-sm > .input-group-addon.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > div.input-group-addon[class*="fc-container__grid--static-input"],
+#fc .fc-container__static--pos-expiration .input-group-sm > .input-group-addon.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > div.input-group-addon[class*='fc-container__grid--static-input'],
 #fc .input-group-sm > .input-group-btn > .form-control-static.btn,
 #fc .input-group-sm > .fc-input-group__button > .form-control-static.btn, #fc .input-group-sm > .input-group-btn > .form-control-static.fc-button, #fc .input-group-sm > .fc-input-group__button > .form-control-static.fc-button, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .input-group-btn > .fc-button.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .fc-input-group__button > .fc-button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .input-group-btn > .fc-button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .fc-input-group__button > .fc-button.fc-form-control--static,
 #fc .fc-container__static--pos-expiration .input-group-sm > .input-group-btn > .fc-button.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-group-sm > .fc-input-group__button > .fc-button.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .input-group-btn > div.fc-button[class*="fc-container__grid--static-input"], #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .fc-input-group__button > div.fc-button[class*="fc-container__grid--static-input"], #fc .input-group-sm > .input-group-btn > .form-control-static.fc-button--minor, #fc .input-group-sm > .fc-input-group__button > .form-control-static.fc-button--minor, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .input-group-btn > .fc-button--minor.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .fc-input-group__button > .fc-button--minor.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .input-group-btn > .fc-button--minor.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .fc-input-group__button > .fc-button--minor.fc-form-control--static,
+#fc .fc-container__static--pos-expiration .input-group-sm > .fc-input-group__button > .fc-button.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .input-group-btn > div.fc-button[class*='fc-container__grid--static-input'], #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .fc-input-group__button > div.fc-button[class*='fc-container__grid--static-input'], #fc .input-group-sm > .input-group-btn > .form-control-static.fc-button--minor, #fc .input-group-sm > .fc-input-group__button > .form-control-static.fc-button--minor, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .input-group-btn > .fc-button--minor.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .fc-input-group__button > .fc-button--minor.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .input-group-btn > .fc-button--minor.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .fc-input-group__button > .fc-button--minor.fc-form-control--static,
 #fc .fc-container__static--pos-expiration .input-group-sm > .input-group-btn > .fc-button--minor.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-group-sm > .fc-input-group__button > .fc-button--minor.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .input-group-btn > div.fc-button--minor[class*="fc-container__grid--static-input"], #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .fc-input-group__button > div.fc-button--minor[class*="fc-container__grid--static-input"], #fc .input-group-sm > .input-group-btn > .form-control-static.fc-sidecart-button, #fc .input-group-sm > .fc-input-group__button > .form-control-static.fc-sidecart-button, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .input-group-btn > .fc-sidecart-button.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .fc-input-group__button > .fc-sidecart-button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .input-group-btn > .fc-sidecart-button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .fc-input-group__button > .fc-sidecart-button.fc-form-control--static,
+#fc .fc-container__static--pos-expiration .input-group-sm > .fc-input-group__button > .fc-button--minor.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .input-group-btn > div.fc-button--minor[class*='fc-container__grid--static-input'], #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .fc-input-group__button > div.fc-button--minor[class*='fc-container__grid--static-input'], #fc .input-group-sm > .input-group-btn > .form-control-static.fc-sidecart-button, #fc .input-group-sm > .fc-input-group__button > .form-control-static.fc-sidecart-button, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .input-group-btn > .fc-sidecart-button.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .fc-input-group__button > .fc-sidecart-button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .input-group-btn > .fc-sidecart-button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .fc-input-group__button > .fc-sidecart-button.fc-form-control--static,
 #fc .fc-container__static--pos-expiration .input-group-sm > .input-group-btn > .fc-sidecart-button.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-group-sm > .fc-input-group__button > .fc-sidecart-button.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .input-group-btn > div.fc-sidecart-button[class*="fc-container__grid--static-input"], #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .fc-input-group__button > div.fc-sidecart-button[class*="fc-container__grid--static-input"], #fc .input-group-sm > .input-group-btn > .form-control-static.fc-action--checkout--button, #fc .input-group-sm > .fc-input-group__button > .form-control-static.fc-action--checkout--button, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .input-group-btn > .fc-action--checkout--button.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .fc-input-group__button > .fc-action--checkout--button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .input-group-btn > .fc-action--checkout--button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .fc-input-group__button > .fc-action--checkout--button.fc-form-control--static,
+#fc .fc-container__static--pos-expiration .input-group-sm > .fc-input-group__button > .fc-sidecart-button.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .input-group-btn > div.fc-sidecart-button[class*='fc-container__grid--static-input'], #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .fc-input-group__button > div.fc-sidecart-button[class*='fc-container__grid--static-input'], #fc .input-group-sm > .input-group-btn > .form-control-static.fc-action--checkout--button, #fc .input-group-sm > .fc-input-group__button > .form-control-static.fc-action--checkout--button, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .input-group-btn > .fc-action--checkout--button.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .fc-input-group__button > .fc-action--checkout--button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .input-group-btn > .fc-action--checkout--button.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .fc-input-group__button > .fc-action--checkout--button.fc-form-control--static,
 #fc .fc-container__static--pos-expiration .input-group-sm > .input-group-btn > .fc-action--checkout--button.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-group-sm > .fc-input-group__button > .fc-action--checkout--button.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .input-group-btn > div.fc-action--checkout--button[class*="fc-container__grid--static-input"], #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .fc-input-group__button > div.fc-action--checkout--button[class*="fc-container__grid--static-input"], #fc .input-group-sm > .input-group-btn > .form-control-static.fc-button-link, #fc .input-group-sm > .fc-input-group__button > .form-control-static.fc-button-link, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .input-group-btn > .fc-button-link.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .fc-input-group__button > .fc-button-link.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .input-group-btn > .fc-button-link.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .fc-input-group__button > .fc-button-link.fc-form-control--static,
+#fc .fc-container__static--pos-expiration .input-group-sm > .fc-input-group__button > .fc-action--checkout--button.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .input-group-btn > div.fc-action--checkout--button[class*='fc-container__grid--static-input'], #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .fc-input-group__button > div.fc-action--checkout--button[class*='fc-container__grid--static-input'], #fc .input-group-sm > .input-group-btn > .form-control-static.fc-button-link, #fc .input-group-sm > .fc-input-group__button > .form-control-static.fc-button-link, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .input-group-btn > .fc-button-link.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .fc-input-group__button > .fc-button-link.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .input-group-btn > .fc-button-link.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .fc-input-group__button > .fc-button-link.fc-form-control--static,
 #fc .fc-container__static--pos-expiration .input-group-sm > .input-group-btn > .fc-button-link.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-group-sm > .fc-input-group__button > .fc-button-link.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .input-group-btn > div.fc-button-link[class*="fc-container__grid--static-input"], #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .fc-input-group__button > div.fc-button-link[class*="fc-container__grid--static-input"], #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .input-group-btn > .btn.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .fc-input-group__button > .btn.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .input-group-btn > .btn.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .fc-input-group__button > .btn.fc-form-control--static,
+#fc .fc-container__static--pos-expiration .input-group-sm > .fc-input-group__button > .fc-button-link.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .input-group-btn > div.fc-button-link[class*='fc-container__grid--static-input'], #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .fc-input-group__button > div.fc-button-link[class*='fc-container__grid--static-input'], #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .input-group-btn > .btn.fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .input-group-sm > .fc-input-group__button > .btn.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .input-group-btn > .btn.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-group-sm > .fc-input-group__button > .btn.fc-form-control--static,
 #fc .fc-container__static--pos-expiration .input-group-sm > .input-group-btn > .btn.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-group-sm > .fc-input-group__button > .btn.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .input-group-btn > div.btn[class*="fc-container__grid--static-input"], #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .fc-input-group__button > div.btn[class*="fc-container__grid--static-input"], #fc .form-control-static.fc-cart__item__quantity__input, #fc .fc-container__static--plastic-saved-expiration .fc-cart__item__quantity__input.fc-form-control--static, #fc .fc-container__static--pos-masked-number .fc-cart__item__quantity__input.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .fc-cart__item__quantity__input.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group div.fc-cart__item__quantity__input[class*="fc-container__grid--static-input"], #fc .fc-container__static--plastic-saved-expiration .input-sm.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-sm.fc-form-control--static,
-#fc .fc-container__static--pos-expiration .input-sm.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group div.input-sm[class*="fc-container__grid--static-input"] {
+#fc .fc-container__static--pos-expiration .input-group-sm > .fc-input-group__button > .btn.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .input-group-btn > div.btn[class*='fc-container__grid--static-input'], #fc #fc-receipt-container fieldset .fc-form-group .input-group-sm > .fc-input-group__button > div.btn[class*='fc-container__grid--static-input'], #fc .form-control-static.fc-cart__item__quantity__input, #fc .fc-container__static--plastic-saved-expiration .fc-cart__item__quantity__input.fc-form-control--static, #fc .fc-container__static--pos-masked-number .fc-cart__item__quantity__input.fc-form-control--static,
+#fc .fc-container__static--pos-expiration .fc-cart__item__quantity__input.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group div.fc-cart__item__quantity__input[class*='fc-container__grid--static-input'], #fc .fc-container__static--plastic-saved-expiration .input-sm.fc-form-control--static, #fc .fc-container__static--pos-masked-number .input-sm.fc-form-control--static,
+#fc .fc-container__static--pos-expiration .input-sm.fc-form-control--static, #fc #fc-receipt-container fieldset .fc-form-group div.input-sm[class*='fc-container__grid--static-input'] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -3982,7 +3982,7 @@ fieldset[disabled]
 }
 
 #fc .form-group-sm .form-control-static, #fc .form-group-sm .fc-container__static--plastic-saved-expiration .fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .form-group-sm .fc-form-control--static, #fc .form-group-sm .fc-container__static--pos-masked-number .fc-form-control--static, #fc .fc-container__static--pos-masked-number .form-group-sm .fc-form-control--static,
-#fc .form-group-sm .fc-container__static--pos-expiration .fc-form-control--static, #fc .fc-container__static--pos-expiration .form-group-sm .fc-form-control--static, #fc .form-group-sm #fc-receipt-container fieldset .fc-form-group div[class*="fc-container__grid--static-input"], #fc #fc-receipt-container fieldset .fc-form-group .form-group-sm div[class*="fc-container__grid--static-input"] {
+#fc .form-group-sm .fc-container__static--pos-expiration .fc-form-control--static, #fc .fc-container__static--pos-expiration .form-group-sm .fc-form-control--static, #fc .form-group-sm #fc-receipt-container fieldset .fc-form-group div[class*='fc-container__grid--static-input'], #fc #fc-receipt-container fieldset .fc-form-group .form-group-sm div[class*='fc-container__grid--static-input'] {
   height: 30px;
   min-height: 32px;
   padding: 6px 10px;
@@ -4050,7 +4050,7 @@ fieldset[disabled]
 }
 
 #fc .form-group-lg .form-control-static, #fc .form-group-lg .fc-container__static--plastic-saved-expiration .fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .form-group-lg .fc-form-control--static, #fc .form-group-lg .fc-container__static--pos-masked-number .fc-form-control--static, #fc .fc-container__static--pos-masked-number .form-group-lg .fc-form-control--static,
-#fc .form-group-lg .fc-container__static--pos-expiration .fc-form-control--static, #fc .fc-container__static--pos-expiration .form-group-lg .fc-form-control--static, #fc .form-group-lg #fc-receipt-container fieldset .fc-form-group div[class*="fc-container__grid--static-input"], #fc #fc-receipt-container fieldset .fc-form-group .form-group-lg div[class*="fc-container__grid--static-input"] {
+#fc .form-group-lg .fc-container__static--pos-expiration .fc-form-control--static, #fc .fc-container__static--pos-expiration .form-group-lg .fc-form-control--static, #fc .form-group-lg #fc-receipt-container fieldset .fc-form-group div[class*='fc-container__grid--static-input'], #fc #fc-receipt-container fieldset .fc-form-group .form-group-lg div[class*='fc-container__grid--static-input'] {
   height: 46px;
   min-height: 38px;
   padding: 11px 16px;
@@ -4308,7 +4308,7 @@ fieldset[disabled]
     vertical-align: middle;
   }
   #fc .form-inline .form-control-static, #fc .form-inline .fc-container__static--plastic-saved-expiration .fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .form-inline .fc-form-control--static, #fc .form-inline .fc-container__static--pos-masked-number .fc-form-control--static, #fc .fc-container__static--pos-masked-number .form-inline .fc-form-control--static,
-  #fc .form-inline .fc-container__static--pos-expiration .fc-form-control--static, #fc .fc-container__static--pos-expiration .form-inline .fc-form-control--static, #fc .form-inline #fc-receipt-container fieldset .fc-form-group div[class*="fc-container__grid--static-input"], #fc #fc-receipt-container fieldset .fc-form-group .form-inline div[class*="fc-container__grid--static-input"] {
+  #fc .form-inline .fc-container__static--pos-expiration .fc-form-control--static, #fc .fc-container__static--pos-expiration .form-inline .fc-form-control--static, #fc .form-inline #fc-receipt-container fieldset .fc-form-group div[class*='fc-container__grid--static-input'], #fc #fc-receipt-container fieldset .fc-form-group .form-inline div[class*='fc-container__grid--static-input'] {
     display: inline-block;
   }
   #fc .form-inline .input-group, #fc .form-inline .fc-input-group, #fc .form-inline .fc-coupon-entry--input {
@@ -6138,7 +6138,7 @@ fieldset[disabled] #fc .fc-button-link:focus {
     vertical-align: middle;
   }
   #fc .navbar-form .form-control-static, #fc .navbar-form .fc-container__static--plastic-saved-expiration .fc-form-control--static, #fc .fc-container__static--plastic-saved-expiration .navbar-form .fc-form-control--static, #fc .navbar-form .fc-container__static--pos-masked-number .fc-form-control--static, #fc .fc-container__static--pos-masked-number .navbar-form .fc-form-control--static,
-  #fc .navbar-form .fc-container__static--pos-expiration .fc-form-control--static, #fc .fc-container__static--pos-expiration .navbar-form .fc-form-control--static, #fc .navbar-form #fc-receipt-container fieldset .fc-form-group div[class*="fc-container__grid--static-input"], #fc #fc-receipt-container fieldset .fc-form-group .navbar-form div[class*="fc-container__grid--static-input"] {
+  #fc .navbar-form .fc-container__static--pos-expiration .fc-form-control--static, #fc .fc-container__static--pos-expiration .navbar-form .fc-form-control--static, #fc .navbar-form #fc-receipt-container fieldset .fc-form-group div[class*='fc-container__grid--static-input'], #fc #fc-receipt-container fieldset .fc-form-group .navbar-form div[class*='fc-container__grid--static-input'] {
     display: inline-block;
   }
   #fc .navbar-form .input-group, #fc .navbar-form .fc-input-group, #fc .navbar-form .fc-coupon-entry--input {
@@ -9686,7 +9686,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 #fc .fc-address-entry .fc-postal-code-entry__loading__text {
-  display: inline-block;
+  display: block;
   float: left;
   margin: 0;
   margin-left: 15px;
@@ -10883,8 +10883,13 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 
 #fc .fc-cart__item {
   padding: 10px;
+  border-top: unset;
   font-size: 13px;
   position: relative;
+}
+
+#fc .fc-cart__item--last {
+  border-bottom: unset;
 }
 
 #fc .fc-cart__item__options {
@@ -11196,14 +11201,10 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 @media (min-width: 768px) {
-  #fc .fc-context--cart-fullpage .fc-cart__item__total {
-    /*       text-align:right; */
-  }
-  #fc .fc-context--cart-fullpage .fc-cart__item__quantity {
-    /*       text-align:center; */
-  }
+  #fc .fc-context--cart-fullpage .fc-cart__item__total,
+  #fc .fc-context--cart-fullpage .fc-cart__item__quantity,
   #fc .fc-context--cart-fullpage .fc-cart__item__price {
-    /*       text-align:left; */
+    text-align: unset;
   }
 }
 
@@ -11305,11 +11306,11 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   color: #999;
 }
 
-#fc #fc-receipt-container fieldset .fc-form-group div[class*="fc-container__grid--static-input"] {
+#fc #fc-receipt-container fieldset .fc-form-group div[class*='fc-container__grid--static-input'] {
   padding-left: 0;
 }
 
-#fc #fc-receipt-container fieldset .fc-form-group div[class*="fc-container__grid--static-input"] p {
+#fc #fc-receipt-container fieldset .fc-form-group div[class*='fc-container__grid--static-input'] p {
   font-size: 0.85em;
   line-height: 1em;
 }
@@ -11371,14 +11372,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 @media print {
-  @page {
-    #fc {
-      size: auto;
-      margin-left: 2cm;
-      margin-right: 2cm;
-    }
-  }
-  #fc [class*="col-sm-"] {
+  #fc [class*='col-sm-'] {
     float: left;
   }
   #fc body,
@@ -11393,7 +11387,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
     margin: 0;
   }
   #fc #fc-logo--receipt {
-    max-height: .75in;
+    max-height: 0.75in;
     max-width: 2in;
   }
   #fc #fc-receipt__section--receipt_messaging_and_actions,
@@ -11421,7 +11415,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
     opacity: 0;
   }
   #fc #fc-receipt__section--shipping-information .fc-receipt__section--shipping-information__address {
-    padding: .5cm 0;
+    padding: 0.5cm 0;
     border: 0.1cm solid #495057;
     font-weight: bold;
   }
@@ -11439,7 +11433,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
     padding: 0;
   }
   #fc .fc-sidebar .fc-transaction__header {
-    padding: .25cm 0;
+    padding: 0.25cm 0;
     margin: 0;
     color: #000;
   }
@@ -11449,7 +11443,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
     color: #000;
   }
   #fc .fc-sidebar .fc-transaction li {
-    padding: 0 0 .5cm;
+    padding: 0 0 0.5cm;
     margin: 0;
     color: #000;
   }
@@ -11457,7 +11451,8 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
     margin: 0;
     padding: 0;
   }
-  #fc .fc-sidebar .fc-transaction td, #fc .fc-sidebar .fc-transaction th {
+  #fc .fc-sidebar .fc-transaction td,
+  #fc .fc-sidebar .fc-transaction th {
     color: #000;
   }
 }
@@ -12241,4 +12236,12 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 
 #fc .fc-alert-container--info .fc-button:hover {
   border-color: #e5f1fa;
+}
+
+@media print {
+  @page {
+    size: auto;
+    margin-left: 2cm;
+    margin-right: 2cm;
+  }
 }
