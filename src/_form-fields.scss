@@ -194,7 +194,7 @@ select.fc-form-control:focus {
 
 .fc-input-group-container--active {
 	padding-bottom: 10px;
-	background-color: $graylighter;
+	background-color: $grayLighter;
 	border-radius: 0;
 	border: 2px solid $white;
 	@include transition(background-color 0.2s linear 0.2s);
