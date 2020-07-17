@@ -79,9 +79,14 @@ ul {
 }
 
 fieldset {
-	margin: 30px 0;
+	margin: unset;
 }
-
+fieldset > legend {
+	padding-top: 1.5rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	background-color: $legendBackground;
+}
 legend {
 	color: $darkerPrimary;
 	font-weight: thin;
