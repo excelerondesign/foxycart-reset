@@ -129,10 +129,9 @@ $cards: visa mastercard amex discover dinersclub maestro laser jcb;
 		.fc-svg-icon--lock {
 			position: absolute;
 			top: 56px;
-			left: 20px;
+			left: 115px;
 			color: $white;
-			font-size: 85px;
-			display: none !important;
+			font-size: 45px;
 			@media ($xSmallScreen) {
 				display: none !important;
 			}
@@ -155,7 +154,6 @@ $cards: visa mastercard amex discover dinersclub maestro laser jcb;
 			right: 9px;
 			font-size: 24px;
 			color: $success;
-			display: none !important;
 		}
 
 		.fc-form-group {
