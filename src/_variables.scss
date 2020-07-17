@@ -64,7 +64,7 @@ $inputChecked: $infoText;
 // Box Shadow
 $boxShadowFocus: $inputShadowFocus;
 
-$legendBackground: $info;
+$legendBackground: $grayLightest;
 
 $secondary: darken(complement($primary), 25%);
 $linkColor: desaturate($primary, 15%);
