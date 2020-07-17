@@ -10660,8 +10660,8 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   position: absolute;
   color: #e8e8e8;
   top: 50px;
-  left: 55px;
-  font-size: 130px;
+  left: 115px;
+  font-size: 45px;
 }
 
 #fc .fc-checkout__section--payment .fc-payment-method--plastic__saved,
@@ -10709,9 +10709,9 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 #fc .fc-checkout__section--payment .fc-payment-method--plastic__saved .fc-svg-icon--lock {
   position: absolute;
   top: 56px;
-  left: 20px;
+  left: 115px;
   color: #ffffff;
-  font-size: 85px;
+  font-size: 45px;
 }
 
 @media (max-width: 480px) {
