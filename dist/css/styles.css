@@ -9348,7 +9348,14 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 #fc fieldset {
-  margin: 30px 0;
+  margin: unset;
+}
+
+#fc fieldset > legend, #fc #fc-receipt-container #fc-cart--responsive fieldset > .fc-cart__title__header {
+  padding-top: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background-color: #f9f9f9;
 }
 
 #fc legend, #fc #fc-receipt-container #fc-cart--responsive .fc-cart__title__header {
@@ -9415,7 +9422,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 #fc .fc-sidebar {
-  background: #e4e4e4;
+  background: #f5f5f5;
   border-radius: 0 4px 4px 0;
 }
 
@@ -10258,6 +10265,13 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 
 #fc .fc-input-group-container--checkbox .fc-input-group-container__title input {
   margin-top: -7px;
+  display: none;
+}
+
+#fc .fc-input-group-container--active.fc-input-group-container--checkbox .fc-input-group-container__title:before {
+  background-color: #3ba1df;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+  border-color: #8bbafe;
 }
 
 #fc .fc-input-group-container .fc-form-group input[type='checkbox'],
@@ -10277,6 +10291,7 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 }
 
 #fc .fc-form-group .fc-input-group-container__title {
+  min-height: 25px;
   line-height: 25px;
   display: block !important;
   background-color: #e8e8e8;
@@ -10316,9 +10331,9 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 #fc .fc-input-group-container__no-title:before,
 #fc .fc-input-group-container__title:before {
   content: '';
-  background: #fff;
+  background: #ffffff;
   border-radius: 0;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   width: 28px;
   height: 28px;
   position: absolute;
@@ -10346,6 +10361,10 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
 #fc .fc-form-label--tos a {
   color: #3c3b38;
   text-decoration: underline;
+}
+
+#fc .fc-checkout__main__form .fc-input-group-container--checkbox {
+  padding-top: 0;
 }
 
 #fc .fc-foxycomplete {
