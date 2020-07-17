@@ -28,18 +28,6 @@ $grayMidDark: #495057; // muted text
 $grayDark: #212121;
 $black: #121314;
 
-$btnText: $grayMidDark;
-$btnBorder: $grayLight;
-$btnBackground: $white;
-$btnActiveText: #555555;
-$btnActiveBorder: #bbbbbb;
-$btnActiveBackground: $grayLight;
-
-$inputBorder: $grayLight;
-$inputShadow: unset;
-$inputBorderFocus: #8bbafe;
-$inputShadowFocus: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
-
 $callToAction: #28a745; // checkout buttons
 $notice: #dc3545; // red danger boxes
 $noticeLight: #ff8593;
@@ -61,6 +49,19 @@ $secondary: $infoText;
 // Box Shadow
 $boxShadowFocus: $inputShadowFocus;
 // preset / calculated colors
+
+$btnText: $grayMidDark;
+$btnBorder: $grayLight;
+$btnBackground: $white;
+$btnActiveText: #555555;
+$btnActiveBorder: #bbbbbb;
+$btnActiveBackground: $grayLight;
+
+$inputBorder: $grayLight;
+$inputShadow: unset;
+$inputBorderFocus: #8bbafe;
+$inputShadowFocus: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+$inputChecked: $infoText;
 
 $secondary: darken(complement($primary), 25%);
 $linkColor: desaturate($primary, 15%);
