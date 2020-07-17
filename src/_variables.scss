@@ -46,8 +46,6 @@ $bgBase: $white;
 $primary: #76797e;
 $secondary: $infoText;
 
-// Box Shadow
-$boxShadowFocus: $inputShadowFocus;
 // preset / calculated colors
 
 $btnText: $grayMidDark;
@@ -62,6 +60,9 @@ $inputShadow: unset;
 $inputBorderFocus: #8bbafe;
 $inputShadowFocus: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
 $inputChecked: $infoText;
+
+// Box Shadow
+$boxShadowFocus: $inputShadowFocus;
 
 $secondary: darken(complement($primary), 25%);
 $linkColor: desaturate($primary, 15%);
