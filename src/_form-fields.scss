@@ -13,6 +13,12 @@
 	}
 }
 
+[data-fc-container='payment'] .fc-form-group {
+	> input + input {
+		margin-top: 1em;
+	}
+}
+
 .fc-form-group--multiple-inline {
 	> div:nth-of-type(2) {
 		padding-right: 7px;
@@ -306,6 +312,12 @@ select.fc-form-control:focus {
 		position: relative;
 		top: -2px;
 		display: inline-block;
+	}
+}
+
+.fc-payment-method--authorize_ach {
+	.fc-input-group-container__title:before {
+		clip: rect(0, 100px, 100px, 6px);
 	}
 }
 
