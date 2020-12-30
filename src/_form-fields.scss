@@ -319,6 +319,11 @@ select.fc-form-control:focus {
 	.fc-input-group-container__title:before {
 		clip: rect(0, 100px, 100px, 6px);
 	}
+	.fc-form-label [type='checkbox'],
+	.fc-form-label [type='radio'] {
+		min-height: 1rem;
+		max-width: 1rem;
+	}
 }
 
 .fc-input-group-container__no-title,
