@@ -10034,6 +10034,10 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   }
 }
 
+#fc [data-fc-container='payment'] .fc-form-group > input + input {
+  margin-top: 1em;
+}
+
 #fc .fc-form-group--multiple-inline > div:nth-of-type(2) {
   padding-right: 7px;
   padding-left: 8px;
@@ -10311,6 +10315,16 @@ fieldset[disabled] #fc .navbar-inverse .fc-button-link:focus {
   position: relative;
   top: -2px;
   display: inline-block;
+}
+
+#fc .fc-payment-method--authorize_ach .fc-input-group-container__title:before {
+  clip: rect(0, 100px, 100px, 6px);
+}
+
+#fc .fc-payment-method--authorize_ach .fc-form-label [type='checkbox'],
+#fc .fc-payment-method--authorize_ach .fc-form-label [type='radio'] {
+  min-height: 1rem;
+  max-width: 1rem;
 }
 
 #fc .fc-input-group-container__no-title .fc-form-control,
